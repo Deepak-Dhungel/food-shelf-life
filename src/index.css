@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand color, used for the logo, links, focus states, and accents */
+  --color-primary-50: #fef2ee;
+  --color-primary-100: #fde3da;
+  --color-primary-200: #fbc7b5;
+  --color-primary-300: #f79f7e;
+  --color-primary-400: #f16f47;
+  --color-primary-500: #e63000;
+  --color-primary-600: #c92900;
+  --color-primary-700: #a32200;
+  --color-primary-800: #7d1a00;
+  --color-primary-900: #5c1300;
+  --color-primary: var(--color-primary-500);
+
+  /* Heading/title font, used for the app title and section/food headings */
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

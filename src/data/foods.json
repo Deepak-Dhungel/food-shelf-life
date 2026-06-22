@@ -1,0 +1,444 @@
+[
+  {
+    "id": 1,
+    "name": "Fruit Juice (cartons, drinks)",
+    "category": "Beverages",
+    "icon": "🧃",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "3 weeks unopened; 7-10 days opened",
+    "fridgeTip": "Keep sealed tightly after opening",
+    "frozen": "8-12 months",
+    "freezerTip": "Freeze in airtight container",
+    "spoilSigns": [
+      "Unusual sour or fermented smell when opened",
+      "Cloudy appearance or unexpected separation",
+      "Visible mold or floating particles in liquid"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Butter",
+    "category": "Dairy",
+    "icon": "🧈",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "1-3 months",
+    "fridgeTip": "Store in original wrapping",
+    "frozen": "6-9 months",
+    "freezerTip": "Wrap tightly to avoid odor absorption",
+    "spoilSigns": [
+      "Rancid or sour smell different from fresh butter",
+      "Yellowing or dark spots on the surface",
+      "Greasy or overly soft texture at normal temperature"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Buttermilk",
+    "category": "Dairy",
+    "icon": "🥛",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "1-2 weeks",
+    "fridgeTip": "Keep sealed",
+    "frozen": "3 months",
+    "freezerTip": "May separate after thawing",
+    "spoilSigns": [
+      "Strong sour smell beyond normal tangy odor",
+      "Thick clumps or unusual separation",
+      "Bubbling or signs of fermentation"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Hard Cheese",
+    "category": "Dairy",
+    "icon": "🧀",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "6 months unopened; 3-4 weeks opened",
+    "fridgeTip": "Wrap properly",
+    "frozen": "6 months",
+    "freezerTip": "Texture may become crumbly",
+    "spoilSigns": [
+      "Visible mold spots beyond small surface growth",
+      "Strong ammonia-like or sour smell",
+      "Dry, cracked, or overly hard texture"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Soft Cheese (Brie, etc.)",
+    "category": "Dairy",
+    "icon": "🧀",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "1 week",
+    "fridgeTip": "Keep sealed",
+    "frozen": "6 months",
+    "freezerTip": "Texture may change",
+    "spoilSigns": [
+      "Fuzzy mold not typical for the cheese type",
+      "Strong sour or ammonia-like smell",
+      "Slimy or overly wet surface"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Milk",
+    "category": "Dairy",
+    "icon": "🥛",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "1 week",
+    "fridgeTip": "Store in coldest part",
+    "frozen": "3 months",
+    "freezerTip": "Shake after thawing",
+    "spoilSigns": [
+      "Sour or unpleasant smell when opened",
+      "Curdling or chunks forming in liquid",
+      "Yellowish tint instead of normal white color"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Eggs (in shell)",
+    "category": "Dairy",
+    "icon": "🥚",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "3-5 weeks",
+    "fridgeTip": "Keep in carton",
+    "frozen": "Do not freeze",
+    "freezerTip": "",
+    "spoilSigns": [
+      "Strong sulfur or rotten smell when cracked",
+      "Runny whites that do not hold shape",
+      "Floating egg in water test indicates spoilage"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Cooked Eggs",
+    "category": "Dairy",
+    "icon": "🍳",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "1 week",
+    "fridgeTip": "Store airtight",
+    "frozen": "Doesn't freeze well",
+    "freezerTip": "",
+    "spoilSigns": [
+      "Rubbery or dried-out texture",
+      "Unpleasant sulfur-like smell",
+      "Discoloration or slimy surface"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Yogurt",
+    "category": "Dairy",
+    "icon": "🥣",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "7-14 days",
+    "fridgeTip": "Keep sealed",
+    "frozen": "1-2 months",
+    "freezerTip": "Texture may change",
+    "spoilSigns": [
+      "Visible mold on surface or lid",
+      "Strong sour smell beyond normal tang",
+      "Excessive watery separation or curdling"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "icon": "🥣",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "7-21 days",
+    "fridgeTip": "Keep closed",
+    "frozen": "Doesn't freeze well",
+    "freezerTip": "",
+    "spoilSigns": [
+      "Watery separation with off smell",
+      "Visible mold growth on surface",
+      "Thickened or curdled texture"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Fresh Pasta",
+    "category": "Grains",
+    "icon": "🍝",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "1-2 days",
+    "fridgeTip": "Use quickly",
+    "frozen": "2 months",
+    "freezerTip": "Store airtight",
+    "spoilSigns": [
+      "Sticky or slimy texture",
+      "Sour or fermented smell",
+      "Discoloration or spots on pasta"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Pesto or Salsa",
+    "category": "Condiments",
+    "icon": "🥫",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "3 days after opening",
+    "fridgeTip": "Keep sealed",
+    "frozen": "1-2 months",
+    "freezerTip": "Freeze small portions",
+    "spoilSigns": [
+      "Visible mold on surface or lid",
+      "Off or sour smell after opening",
+      "Darkening or separation beyond normal"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Tofu",
+    "category": "Soy Products",
+    "icon": "🍱",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "1 week",
+    "fridgeTip": "Keep in water",
+    "frozen": "5 months",
+    "freezerTip": "Texture changes",
+    "spoilSigns": [
+      "Slimy or sticky surface texture",
+      "Strong sour or unpleasant smell",
+      "Cloudy water or discoloration"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Miso",
+    "category": "Soy Products",
+    "icon": "🍲",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "3 months",
+    "fridgeTip": "Keep sealed",
+    "frozen": "Do not freeze",
+    "freezerTip": "",
+    "spoilSigns": [
+      "Visible mold growth on surface",
+      "Unusual sour or off smell",
+      "Color change from original paste"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Apples",
+    "category": "Fruits",
+    "icon": "🍎",
+    "pantry": "1-2 days",
+    "pantryTip": "Store in a cool, dry place",
+    "refrigerated": "3 weeks",
+    "fridgeTip": "Keep in crisper drawer",
+    "frozen": "8 months (cooked)",
+    "freezerTip": "Freeze after slicing or cooking",
+    "spoilSigns": [
+      "Soft or mushy spots on the surface",
+      "Wrinkled skin or loss of firmness",
+      "Sour or fermented smell"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Bananas",
+    "category": "Fruits",
+    "icon": "🍌",
+    "pantry": "Until ripe",
+    "pantryTip": "Keep at room temperature",
+    "refrigerated": "2 days",
+    "fridgeTip": "Skin may darken but inside stays fresh",
+    "frozen": "1 month (peeled)",
+    "freezerTip": "Peel before freezing",
+    "spoilSigns": [
+      "Overly mushy texture when peeled",
+      "Strong fermented or alcohol-like smell",
+      "Liquid leaking from fruit"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Berries",
+    "category": "Fruits",
+    "icon": "🍓",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "1-2 days",
+    "fridgeTip": "Store unwashed until use",
+    "frozen": "4 months",
+    "freezerTip": "Freeze in single layer first",
+    "spoilSigns": [
+      "Visible mold on berries",
+      "Soft, mushy, or leaking texture",
+      "Sour or off smell"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Grapes",
+    "category": "Fruits",
+    "icon": "🍇",
+    "pantry": "1 day",
+    "pantryTip": "Keep in cool place",
+    "refrigerated": "1 week",
+    "fridgeTip": "Store in ventilated bag",
+    "frozen": "1 month",
+    "freezerTip": "Freeze whole or halved",
+    "spoilSigns": [
+      "Wrinkled or shriveled skin",
+      "Sticky or leaking juice",
+      "Sour or fermented smell"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Melons",
+    "category": "Fruits",
+    "icon": "🍈",
+    "pantry": "1-2 days",
+    "pantryTip": "Store whole at room temperature",
+    "refrigerated": "3-4 days",
+    "fridgeTip": "Cover cut pieces",
+    "frozen": "1 month",
+    "freezerTip": "Freeze in chunks",
+    "spoilSigns": [
+      "Slimy or wet surface on cut pieces",
+      "Sour or unpleasant smell",
+      "Soft spots or discoloration"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Peaches",
+    "category": "Fruits",
+    "icon": "🍑",
+    "pantry": "Until ripe",
+    "pantryTip": "Ripen at room temperature",
+    "refrigerated": "3-4 days",
+    "fridgeTip": "Store after ripening",
+    "frozen": "2 months",
+    "freezerTip": "Slice before freezing",
+    "spoilSigns": [
+      "Very soft or mushy texture",
+      "Wrinkled or collapsing skin",
+      "Fermented or sour smell"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Carrots",
+    "category": "Vegetables",
+    "icon": "🥕",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "3 weeks",
+    "fridgeTip": "Store in sealed bag",
+    "frozen": "10-12 months",
+    "freezerTip": "Blanch before freezing",
+    "spoilSigns": [
+      "Limp or rubbery texture",
+      "Black or dark spots",
+      "Slimy surface"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Broccoli",
+    "category": "Vegetables",
+    "icon": "🥦",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "3-5 days",
+    "fridgeTip": "Store in crisper drawer",
+    "frozen": "10-12 months",
+    "freezerTip": "Blanch before freezing",
+    "spoilSigns": [
+      "Yellowing florets instead of green",
+      "Soft or limp texture",
+      "Strong unpleasant smell"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Cucumbers",
+    "category": "Vegetables",
+    "icon": "🥒",
+    "pantry": null,
+    "pantryTip": "",
+    "refrigerated": "4-5 days",
+    "fridgeTip": "Store in crisper drawer",
+    "frozen": "Do not freeze",
+    "freezerTip": "",
+    "spoilSigns": [
+      "Soft or mushy texture",
+      "Wrinkled or shriveled skin",
+      "Slimy coating on surface"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Potatoes",
+    "category": "Vegetables",
+    "icon": "🥔",
+    "pantry": "1-2 months",
+    "pantryTip": "Store in cool, dark place",
+    "refrigerated": "1-2 weeks",
+    "fridgeTip": "Avoid fridge if possible",
+    "frozen": "10-12 months (cooked)",
+    "freezerTip": "Freeze cooked or mashed",
+    "spoilSigns": [
+      "Sprouting eyes or green spots",
+      "Soft or shriveled texture",
+      "Musty or rotten smell"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Onions",
+    "category": "Vegetables",
+    "icon": "🧅",
+    "pantry": "2-3 weeks",
+    "pantryTip": "Store in dry, ventilated area",
+    "refrigerated": "2 months",
+    "fridgeTip": "Keep in sealed container",
+    "frozen": "10-12 months",
+    "freezerTip": "Chop before freezing",
+    "spoilSigns": [
+      "Soft or mushy layers inside",
+      "Strong rotten or sulfur smell",
+      "Visible mold or dark spots"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Tomatoes",
+    "category": "Fruits",
+    "icon": "🍅",
+    "pantry": "Until ripe",
+    "pantryTip": "Ripen at room temperature",
+    "refrigerated": "2-3 days",
+    "fridgeTip": "Use quickly after refrigerating",
+    "frozen": "2 months",
+    "freezerTip": "Freeze whole or chopped",
+    "spoilSigns": [
+      "Very soft or leaking texture",
+      "Wrinkled or split skin",
+      "Sour or fermented smell"
+    ]
+  }
+]

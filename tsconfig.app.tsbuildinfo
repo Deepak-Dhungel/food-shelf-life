@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/datasourcebanner.tsx","./src/components/fooditem.tsx","./src/components/foodlist.tsx","./src/components/header.tsx","./src/components/infooverlay.tsx","./src/components/mobilesearchoverlay.tsx","./src/components/searchbar.tsx","./src/constants/constant.ts","./src/types/food.ts"],"version":"6.0.3"}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f26640"/>
+      <stop offset="100%" stop-color="#be2700"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="115" fill="url(#g)"/>
+  <!-- Subtle top highlight for depth -->
+  <ellipse cx="256" cy="100" rx="220" ry="110" fill="white" fill-opacity="0.08"/>
+  <!-- Checkmark -->
+  <polyline
+    points="125,262 218,356 387,168"
+    fill="none"
+    stroke="white"
+    stroke-width="54"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
