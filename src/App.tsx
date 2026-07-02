@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import foodData from "./data/foods.json";
 import type { Food } from "./types/food";
 import DataSourceBanner from "./components/DataSourceBanner";
 import Header from "./components/Header";
 import FoodList from "./components/FoodList";
 import SearchBar from "./components/SearchBar";
-import MobileSearchOverlay from "./components/MobileSearchOverlay";
+import MobileSearchOverlay, {
+  type MobileSearchOverlayHandle,
+} from "./components/MobileSearchOverlay";
 import { ALL_CATEGORIES } from "./constants/constant";
 
 const foods = foodData as Food[];
@@ -16,6 +18,12 @@ function App() {
   const [activeCategory, setActiveCategory] = useState<string>(ALL_CATEGORIES);
   const [searchPanelOpen, setSearchPanelOpen] = useState(true);
   const [overlayOpen, setOverlayOpen] = useState(false);
+  const overlayRef = useRef<MobileSearchOverlayHandle>(null);
+
+  const openOverlay = () => {
+    overlayRef.current?.focusInput();
+    setOverlayOpen(true);
+  };
 
   const filteredFoods = foods.filter((food) => {
     const matchesQuery =
@@ -53,7 +61,7 @@ function App() {
         <div className="flex items-center gap-3">
           <div
             className="flex-1 drop-shadow-[0_-4px_20px_rgba(0,0,0,0.14)] cursor-pointer"
-            onClick={() => setOverlayOpen(true)}
+            onClick={openOverlay}
           >
             <div className="pointer-events-none">
               <SearchBar query={query} onSearch={setQuery} />
@@ -78,7 +86,7 @@ function App() {
       {/* Backdrop — closes panel when tapping outside */}
       {searchPanelOpen && (
         <div
-          className="hidden max-sm:block fixed inset-0 z-40"
+          className="hidden max-sm:block fixed inset-0 z-20"
           onClick={() => setSearchPanelOpen(false)}
         />
       )}
@@ -94,25 +102,13 @@ function App() {
           <div className="w-10 h-1 rounded-full bg-gray-200" />
         </div>
 
-        {/* Close button */}
-        {/* <button
-          type="button"
-          onClick={() => setSearchPanelOpen(false)}
-          aria-label="Close"
-          className="absolute top-4 right-5 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-500"
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button> */}
-
         <p className="text-xl font-bold text-gray-900 text-center mt-6 mb-4 leading-snug">
           Find food safety info
           <span className="block text-sm font-normal text-gray-400 mt-1">
             Search a food or browse by category
           </span>
         </p>
-        <div className="cursor-pointer" onClick={() => setOverlayOpen(true)}>
+        <div className="cursor-pointer" onClick={openOverlay}>
           <div className="pointer-events-none">
             <SearchBar query={query} onSearch={setQuery} />
           </div>
@@ -128,6 +124,7 @@ function App() {
 
       {/* Mobile full-screen search overlay */}
       <MobileSearchOverlay
+        ref={overlayRef}
         isOpen={overlayOpen}
         foods={foods}
         onClose={() => setOverlayOpen(false)}

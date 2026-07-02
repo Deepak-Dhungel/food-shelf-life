@@ -1,4 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from "react";
 import SearchBar from "./SearchBar";
 import { POPULAR_CATEGORIES } from "../constants/constant";
 import type { Food } from "../types/food";
@@ -11,23 +17,30 @@ interface MobileSearchOverlayProps {
   onSelectFood: (food: Food) => void;
 }
 
-export default function MobileSearchOverlay({
-  isOpen,
-  foods,
-  onClose,
-  onCategorySelect,
-  onSelectFood,
-}: MobileSearchOverlayProps) {
+export interface MobileSearchOverlayHandle {
+  focusInput: () => void;
+}
+
+const MobileSearchOverlay = forwardRef<
+  MobileSearchOverlayHandle,
+  MobileSearchOverlayProps
+>(function MobileSearchOverlay(
+  { isOpen, foods, onClose, onCategorySelect, onSelectFood },
+  ref
+) {
   const [overlayQuery, setOverlayQuery] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
 
+  useImperativeHandle(ref, () => ({
+    focusInput: () => {
+      containerRef.current
+        ?.querySelector("input")
+        ?.focus({ preventScroll: true });
+    },
+  }));
+
   useEffect(() => {
-    if (isOpen) {
-      const timer = setTimeout(() => {
-        containerRef.current?.querySelector("input")?.focus();
-      }, 50);
-      return () => clearTimeout(timer);
-    } else {
+    if (!isOpen) {
       setOverlayQuery("");
     }
   }, [isOpen]);
@@ -132,4 +145,6 @@ export default function MobileSearchOverlay({
       </div>
     </div>
   );
-}
+});
+
+export default MobileSearchOverlay;
