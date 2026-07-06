@@ -1,15 +1,19 @@
 [
   {
     "id": 1,
-    "name": "Fruit Juice (cartons, drinks)",
-    "category": "Beverages",
+    "name": "Juice in Cartons, Fruit Drinks, Punch",
+    "category": "Beverages, Fruit",
     "icon": "🧃",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "3 weeks unopened; 7-10 days opened",
-    "fridgeTip": "Keep sealed tightly after opening",
-    "frozen": "8-12 months",
-    "freezerTip": "Freeze in airtight container",
+    "refrigerated": {
+      "unopened": "3 weeks",
+      "opened": "7-10 days",
+      "tip": "Keep sealed tightly after opening"
+    },
+    "frozen": {
+      "unopened": "8-12 months",
+      "tip": "Freeze in airtight container"
+    },
     "spoilSigns": [
       "Unusual sour or fermented smell when opened",
       "Cloudy appearance or unexpected separation",
@@ -19,358 +23,1960 @@
   {
     "id": 2,
     "name": "Butter",
-    "category": "Dairy",
+    "category": "Dairy Products",
     "icon": "🧈",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "1-3 months",
-    "fridgeTip": "Store in original wrapping",
-    "frozen": "6-9 months",
-    "freezerTip": "Wrap tightly to avoid odor absorption",
+    "refrigerated": {
+      "unopened": "1-3 months",
+      "tip": "Keep wrapped tightly to avoid absorbing odors"
+    },
+    "frozen": {
+      "unopened": "6-9 months",
+      "tip": "Wrap in foil or freezer paper before freezing"
+    },
     "spoilSigns": [
-      "Rancid or sour smell different from fresh butter",
-      "Yellowing or dark spots on the surface",
-      "Greasy or overly soft texture at normal temperature"
+      "Rancid or sour smell",
+      "Off or discolored appearance",
+      "Slimy texture"
     ]
   },
   {
     "id": 3,
     "name": "Buttermilk",
-    "category": "Dairy",
+    "category": "Dairy Products",
     "icon": "🥛",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "1-2 weeks",
-    "fridgeTip": "Keep sealed",
-    "frozen": "3 months",
-    "freezerTip": "May separate after thawing",
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Keep tightly sealed in original container"
+    },
+    "frozen": {
+      "unopened": "3 months",
+      "tip": "Shake well after thawing; texture may change"
+    },
     "spoilSigns": [
-      "Strong sour smell beyond normal tangy odor",
-      "Thick clumps or unusual separation",
-      "Bubbling or signs of fermentation"
+      "Strong sour smell beyond normal tanginess",
+      "Mold visible in container",
+      "Unusual lumps or curdling"
     ]
   },
   {
     "id": 4,
-    "name": "Hard Cheese",
-    "category": "Dairy",
+    "name": "Cheese, Hard (Cheddar, Swiss, Block Parmesan)",
+    "category": "Dairy Products",
     "icon": "🧀",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "6 months unopened; 3-4 weeks opened",
-    "fridgeTip": "Wrap properly",
-    "frozen": "6 months",
-    "freezerTip": "Texture may become crumbly",
+    "refrigerated": {
+      "unopened": "6 months",
+      "opened": "3-4 weeks",
+      "tip": "Wrap tightly in wax paper or plastic wrap after opening"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Best shredded before freezing; texture may crumble"
+    },
     "spoilSigns": [
-      "Visible mold spots beyond small surface growth",
-      "Strong ammonia-like or sour smell",
-      "Dry, cracked, or overly hard texture"
+      "Visible mold beyond surface (cut off 1 inch around mold for hard cheese)",
+      "Off smell",
+      "Slimy texture"
     ]
   },
   {
     "id": 5,
-    "name": "Soft Cheese (Brie, etc.)",
-    "category": "Dairy",
+    "name": "Parmesan, Shredded",
+    "category": "Dairy Products",
     "icon": "🧀",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "1 week",
-    "fridgeTip": "Keep sealed",
-    "frozen": "6 months",
-    "freezerTip": "Texture may change",
-    "spoilSigns": [
-      "Fuzzy mold not typical for the cheese type",
-      "Strong sour or ammonia-like smell",
-      "Slimy or overly wet surface"
-    ]
+    "refrigerated": {
+      "opened": "1 month",
+      "tip": "Keep sealed to prevent drying out"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in small portions for easy use"
+    },
+    "spoilSigns": ["Mold growth", "Off or rancid smell", "Discoloration"]
   },
   {
     "id": 6,
-    "name": "Milk",
-    "category": "Dairy",
-    "icon": "🥛",
+    "name": "Shredded Cheddar, Mozzarella, etc.",
+    "category": "Dairy Products",
+    "icon": "🧀",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "1 week",
-    "fridgeTip": "Store in coldest part",
-    "frozen": "3 months",
-    "freezerTip": "Shake after thawing",
-    "spoilSigns": [
-      "Sour or unpleasant smell when opened",
-      "Curdling or chunks forming in liquid",
-      "Yellowish tint instead of normal white color"
-    ]
+    "refrigerated": {
+      "unopened": "1 month",
+      "tip": "Keep sealed tightly after opening"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in original bag or airtight container"
+    },
+    "spoilSigns": ["Mold growth", "Off smell", "Slimy or wet texture"]
   },
   {
     "id": 7,
-    "name": "Eggs (in shell)",
-    "category": "Dairy",
-    "icon": "🥚",
+    "name": "Cheese, Processed Slices",
+    "category": "Dairy Products",
+    "icon": "🧀",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "3-5 weeks",
-    "fridgeTip": "Keep in carton",
-    "frozen": "Do not freeze",
-    "freezerTip": "",
-    "spoilSigns": [
-      "Strong sulfur or rotten smell when cracked",
-      "Runny whites that do not hold shape",
-      "Floating egg in water test indicates spoilage"
-    ]
+    "refrigerated": {
+      "unopened": "1-2 months",
+      "tip": "Keep individually wrapped slices sealed"
+    },
+    "frozen": null,
+    "spoilSigns": ["Mold on slices", "Off smell", "Slimy or sticky texture"]
   },
   {
     "id": 8,
-    "name": "Cooked Eggs",
-    "category": "Dairy",
-    "icon": "🍳",
+    "name": "Cheese, Soft (Brie, Bel Paese)",
+    "category": "Dairy Products",
+    "icon": "🧀",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "1 week",
-    "fridgeTip": "Store airtight",
-    "frozen": "Doesn't freeze well",
-    "freezerTip": "",
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Store in original packaging or loosely wrapped"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Texture may change after freezing"
+    },
     "spoilSigns": [
-      "Rubbery or dried-out texture",
-      "Unpleasant sulfur-like smell",
-      "Discoloration or slimy surface"
+      "Unusual mold beyond natural rind",
+      "Ammonia-like smell",
+      "Slimy texture"
     ]
   },
   {
     "id": 9,
-    "name": "Yogurt",
-    "category": "Dairy",
-    "icon": "🥣",
+    "name": "Cottage Cheese, Ricotta",
+    "category": "Dairy Products",
+    "icon": "🥛",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "7-14 days",
-    "fridgeTip": "Keep sealed",
-    "frozen": "1-2 months",
-    "freezerTip": "Texture may change",
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Store with lid tightly sealed; keep upside down to extend freshness"
+    },
+    "frozen": null,
     "spoilSigns": [
-      "Visible mold on surface or lid",
-      "Strong sour smell beyond normal tang",
-      "Excessive watery separation or curdling"
+      "Sour smell",
+      "Yellow or pink discoloration",
+      "Mold on surface"
     ]
   },
   {
     "id": 10,
-    "name": "Sour Cream",
-    "category": "Dairy",
-    "icon": "🥣",
+    "name": "Cream Cheese",
+    "category": "Dairy Products",
+    "icon": "🧀",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "7-21 days",
-    "fridgeTip": "Keep closed",
-    "frozen": "Doesn't freeze well",
-    "freezerTip": "",
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Keep tightly wrapped; store in original foil"
+    },
+    "frozen": null,
     "spoilSigns": [
-      "Watery separation with off smell",
-      "Visible mold growth on surface",
-      "Thickened or curdled texture"
+      "Mold growth",
+      "Sour or off smell",
+      "Watery or slimy texture"
     ]
   },
   {
     "id": 11,
-    "name": "Fresh Pasta",
-    "category": "Grains",
-    "icon": "🍝",
+    "name": "Cream, Whipping / Ultrapasteurized",
+    "category": "Dairy Products",
+    "icon": "🥛",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "1-2 days",
-    "fridgeTip": "Use quickly",
-    "frozen": "2 months",
-    "freezerTip": "Store airtight",
-    "spoilSigns": [
-      "Sticky or slimy texture",
-      "Sour or fermented smell",
-      "Discoloration or spots on pasta"
-    ]
+    "refrigerated": {
+      "unopened": "1 month",
+      "tip": "Keep tightly sealed; do not shake before using"
+    },
+    "frozen": null,
+    "spoilSigns": ["Sour smell", "Curdled or chunky texture", "Yellow tint"]
   },
   {
     "id": 12,
-    "name": "Pesto or Salsa",
-    "category": "Condiments",
-    "icon": "🥫",
+    "name": "Whipped Cream, Sweetened",
+    "category": "Dairy Products",
+    "icon": "🍦",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "3 days after opening",
-    "fridgeTip": "Keep sealed",
-    "frozen": "1-2 months",
-    "freezerTip": "Freeze small portions",
+    "refrigerated": {
+      "unopened": "1 day",
+      "tip": "Best used immediately after whipping"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in dollops on parchment paper"
+    },
     "spoilSigns": [
-      "Visible mold on surface or lid",
-      "Off or sour smell after opening",
-      "Darkening or separation beyond normal"
+      "Loss of volume or deflation",
+      "Sour smell",
+      "Watery separation"
     ]
   },
   {
     "id": 13,
-    "name": "Tofu",
-    "category": "Soy Products",
-    "icon": "🍱",
+    "name": "Aerosol Can, Real Whipped Cream",
+    "category": "Dairy Products",
+    "icon": "🍦",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "1 week",
-    "fridgeTip": "Keep in water",
-    "frozen": "5 months",
-    "freezerTip": "Texture changes",
+    "refrigerated": {
+      "unopened": "3-4 weeks",
+      "tip": "Store upright; shake before use"
+    },
+    "frozen": null,
     "spoilSigns": [
-      "Slimy or sticky surface texture",
-      "Strong sour or unpleasant smell",
-      "Cloudy water or discoloration"
+      "Sour smell when dispensed",
+      "No longer dispenses properly",
+      "Off taste"
     ]
   },
   {
     "id": 14,
-    "name": "Miso",
-    "category": "Soy Products",
-    "icon": "🍲",
+    "name": "Aerosol Can, Nondairy Topping",
+    "category": "Dairy Products",
+    "icon": "🍦",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "3 months",
-    "fridgeTip": "Keep sealed",
-    "frozen": "Do not freeze",
-    "freezerTip": "",
+    "refrigerated": {
+      "unopened": "3 months",
+      "tip": "Keep refrigerated even before opening"
+    },
+    "frozen": null,
     "spoilSigns": [
-      "Visible mold growth on surface",
-      "Unusual sour or off smell",
-      "Color change from original paste"
+      "Off smell when dispensed",
+      "Fails to dispense",
+      "Unusual taste"
     ]
   },
   {
-    "id": 101,
+    "id": 15,
+    "name": "Cream, Half-and-Half",
+    "category": "Dairy Products",
+    "icon": "🥛",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep tightly sealed in original container"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Shake or stir well after thawing; may separate"
+    },
+    "spoilSigns": ["Sour smell", "Curdled texture", "Off taste"]
+  },
+  {
+    "id": 16,
+    "name": "Dips, Sour Cream Based",
+    "category": "Dairy Products",
+    "icon": "🥣",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Keep lid sealed; avoid double-dipping to prevent contamination"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Sour or off smell",
+      "Watery separation on surface"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Egg Substitutes, Liquid (Unopened)",
+    "category": "Dairy Products",
+    "icon": "🥚",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "10 days",
+      "tip": "Check use-by date; store in original container"
+    },
+    "frozen": null,
+    "spoilSigns": ["Off smell", "Unusual color or texture", "Past use-by date"]
+  },
+  {
+    "id": 18,
+    "name": "Egg Substitutes, Liquid (Opened)",
+    "category": "Dairy Products",
+    "icon": "🥚",
+    "pantry": null,
+    "refrigerated": {
+      "opened": "3 days",
+      "tip": "Use quickly after opening; keep tightly sealed"
+    },
+    "frozen": null,
+    "spoilSigns": ["Off smell", "Unusual color or texture", "Slimy consistency"]
+  },
+  {
+    "id": 19,
+    "name": "Eggnog, Commercial",
+    "category": "Dairy Products",
+    "icon": "🥛",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-5 days",
+      "tip": "Keep tightly sealed; do not leave out at room temperature"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "May separate slightly after thawing; stir well"
+    },
+    "spoilSigns": ["Sour smell", "Curdled texture", "Off taste"]
+  },
+  {
+    "id": 20,
+    "name": "Eggs, In Shell",
+    "category": "Dairy Products",
+    "icon": "🥚",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-5 weeks",
+      "tip": "Store in original carton in coldest part of fridge"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Floats in water (float test)",
+      "Sulfur or off smell when cracked",
+      "Discolored yolk or white"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Eggs, Raw Whites / Yolks",
+    "category": "Dairy Products",
+    "icon": "🥚",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2-4 days",
+      "tip": "Store in airtight container; cover yolks with water to prevent drying"
+    },
+    "frozen": {
+      "unopened": "12 months",
+      "tip": "Add salt or sugar to yolks before freezing to prevent gelling"
+    },
+    "spoilSigns": ["Off smell", "Slimy texture", "Discoloration"]
+  },
+  {
+    "id": 22,
+    "name": "Eggs, Hard Cooked",
+    "category": "Dairy Products",
+    "icon": "🥚",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep in shell until ready to eat; store in carton"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Sulfur smell",
+      "Slimy texture on white",
+      "Discoloration inside"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Kefir (Fermented Milk)",
+    "category": "Dairy Products",
+    "icon": "🥛",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week after date",
+      "opened": "1-2 days",
+      "tip": "Keep tightly sealed; natural separation is normal—shake before use"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Extremely sour smell beyond normal tanginess",
+      "Mold growth",
+      "Off taste"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Margarine",
+    "category": "Dairy Products",
+    "icon": "🧈",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "6 months",
+      "tip": "Keep tightly sealed to prevent absorption of odors"
+    },
+    "frozen": {
+      "unopened": "12 months",
+      "tip": "Wrap tightly in foil before freezing"
+    },
+    "spoilSigns": ["Rancid or off smell", "Discoloration", "Slimy texture"]
+  },
+  {
+    "id": 25,
+    "name": "Milk, Plain or Flavored",
+    "category": "Dairy Products",
+    "icon": "🥛",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Store in coldest part of fridge; keep away from strong-smelling foods"
+    },
+    "frozen": {
+      "unopened": "3 months",
+      "tip": "Thaw in refrigerator; shake well after thawing"
+    },
+    "spoilSigns": ["Sour smell", "Curdled texture", "Off taste"]
+  },
+  {
+    "id": 26,
+    "name": "Pudding",
+    "category": "Dairy Products",
+    "icon": "🍮",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Package date",
+      "opened": "2 days after opening",
+      "tip": "Cover surface with plastic wrap to prevent skin from forming"
+    },
+    "frozen": null,
+    "spoilSigns": ["Mold growth", "Off smell", "Watery separation"]
+  },
+  {
+    "id": 27,
+    "name": "Sour Cream",
+    "category": "Dairy Products",
+    "icon": "🥣",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "7-21 days",
+      "tip": "Keep lid tight; store upside-down to create a seal and extend freshness"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold on surface",
+      "Very sour or rancid smell",
+      "Watery separation with pink or yellow tint"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Yogurt",
+    "category": "Dairy Products",
+    "icon": "🥛",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "7-14 days",
+      "tip": "Keep sealed; some liquid separation is normal—stir before eating"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Texture changes when thawed; best used in smoothies"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Strong sour smell",
+      "Pink or green discoloration"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Tube Cans of Biscuits, Rolls, Pizza Dough",
+    "category": "Dough",
+    "icon": "🥐",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Use-by date",
+      "tip": "Do not open until ready to use; keep refrigerated at all times"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Can has already popped open",
+      "Off smell when opened",
+      "Unusual discoloration of dough"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Ready-to-Bake Pie Crust",
+    "category": "Dough",
+    "icon": "🥧",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Use-by date",
+      "tip": "Keep refrigerated; let come to room temperature briefly before rolling"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Thaw overnight in refrigerator before using"
+    },
+    "spoilSigns": [
+      "Off smell",
+      "Mold growth",
+      "Dough appears gray or discolored"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Cookie Dough",
+    "category": "Dough",
+    "icon": "🍪",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Use-by date",
+      "opened": "Use-by date",
+      "tip": "Keep tightly wrapped after opening"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Freeze pre-portioned for easy baking"
+    },
+    "spoilSigns": ["Off smell", "Mold growth", "Unusual discoloration"]
+  },
+  {
+    "id": 32,
+    "name": "Pasta, Fresh",
+    "category": "Pasta, Fresh",
+    "icon": "🍝",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days or use-by date on package",
+      "tip": "Keep sealed; dust with flour to prevent sticking"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Freeze on a baking sheet first, then transfer to airtight bag"
+    },
+    "spoilSigns": [
+      "Sour or off smell",
+      "Slimy texture",
+      "Mold growth or discoloration"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Pesto or Salsa",
+    "category": "Pesto or Salsa",
+    "icon": "🫙",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Date on carton",
+      "opened": "3 days after opening",
+      "tip": "Keep tightly sealed; pour a thin layer of olive oil on top of pesto to preserve color"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze pesto in ice cube trays for convenient portions"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off or rancid smell",
+      "Significant color change (pesto turning brown)"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Soy or Rice Beverage, Refrigerated",
+    "category": "Soy Products",
+    "icon": "🥛",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "7-10 days",
+      "tip": "Shake well before use; keep sealed tightly"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Sour or off smell",
+      "Curdled or chunky texture",
+      "Off taste"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Tofu",
+    "category": "Soy Products",
+    "icon": "🟦",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week or package date",
+      "tip": "Store opened tofu submerged in fresh water; change water daily"
+    },
+    "frozen": {
+      "unopened": "5 months",
+      "tip": "Freezing changes texture to be chewier; press out water after thawing"
+    },
+    "spoilSigns": ["Sour smell", "Slimy surface", "Discoloration or mold"]
+  },
+  {
+    "id": 36,
+    "name": "Miso",
+    "category": "Soy Products",
+    "icon": "🫙",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3 months",
+      "tip": "Press plastic wrap directly on surface to minimize air exposure"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth on surface",
+      "Off or unusually strong smell",
+      "Significant color change"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Lean Fish (Cod, Flounder, Haddock, Halibut, Sole, etc.)",
+    "category": "Fish",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store on ice or in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "6-8 months",
+      "tip": "Wrap tightly in freezer paper or vacuum seal"
+    },
+    "spoilSigns": [
+      "Strong fishy or ammonia smell",
+      "Slimy texture",
+      "Dull or grayish color"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Lean Fish (Pollock, Ocean Perch, Rockfish, Sea Trout)",
+    "category": "Fish",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep on a bed of ice in the coldest part of the refrigerator"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Vacuum seal to prevent freezer burn"
+    },
+    "spoilSigns": [
+      "Strong or sour fishy smell",
+      "Slimy or sticky texture",
+      "Flesh that doesn't spring back when pressed"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Fatty Fish (Bluefish, Mackerel, Mullet, Salmon, Tuna, etc.)",
+    "category": "Fish",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep tightly wrapped; fatty fish spoils faster than lean fish"
+    },
+    "frozen": {
+      "unopened": "2-3 months",
+      "tip": "Wrap tightly; higher fat content makes it more prone to freezer burn"
+    },
+    "spoilSigns": [
+      "Rancid or strong fishy smell",
+      "Slimy texture",
+      "Dull or discolored flesh"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Caviar, Fresh, in Jar",
+    "category": "Fish",
+    "icon": "🫙",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-4 weeks",
+      "opened": "2 days",
+      "tip": "Store in coldest part of fridge; keep lid tightly sealed"
+    },
+    "frozen": null,
+    "spoilSigns": ["Off or sour smell", "Mushy texture", "Discoloration"]
+  },
+  {
+    "id": 41,
+    "name": "Cooked Fish, All",
+    "category": "Fish",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store in airtight container; reheat thoroughly before eating"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in portions; thaw in refrigerator overnight"
+    },
+    "spoilSigns": [
+      "Strong fishy or sour smell",
+      "Slimy texture",
+      "Discoloration"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Surimi Seafood",
+    "category": "Fish",
+    "icon": "🦀",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days or package date",
+      "tip": "Keep sealed in original packaging until use"
+    },
+    "frozen": {
+      "unopened": "9 months",
+      "tip": "Keep in original packaging or transfer to airtight freezer bag"
+    },
+    "spoilSigns": ["Off or sour smell", "Slimy texture", "Discoloration"]
+  },
+  {
+    "id": 43,
+    "name": "Shrimp, Scallops, Crayfish, Squid",
+    "category": "Shellfish",
+    "icon": "🦐",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store in coldest part of fridge; keep in original packaging or airtight container"
+    },
+    "frozen": {
+      "unopened": "3-6 months",
+      "tip": "Freeze raw for best quality; can freeze in water for protection"
+    },
+    "spoilSigns": [
+      "Ammonia or strong fishy smell",
+      "Slimy texture",
+      "Discoloration or black spots"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Shucked Clams, Mussels and Oysters",
+    "category": "Shellfish",
+    "icon": "🦪",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store in their own liquor in a covered container"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in their liquor in an airtight container"
+    },
+    "spoilSigns": ["Strong or off smell", "Slimy texture", "Cloudy liquor"]
+  },
+  {
+    "id": 45,
+    "name": "Crab Meat, Fresh",
+    "category": "Shellfish",
+    "icon": "🦀",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep in coldest part of fridge; store in airtight container"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Freeze in airtight container; thaw in refrigerator"
+    },
+    "spoilSigns": [
+      "Strong ammonia or sour smell",
+      "Slimy texture",
+      "Discoloration"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Crab Meat, Pasteurized",
+    "category": "Shellfish",
+    "icon": "🦀",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "6 months",
+      "opened": "3-5 days",
+      "tip": "Do not open until ready to use; keep refrigerated at all times"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Freeze before opening for best quality"
+    },
+    "spoilSigns": ["Off smell after opening", "Slimy texture", "Discoloration"]
+  },
+  {
+    "id": 47,
+    "name": "Crab Legs (King, Dungeness, Snow)",
+    "category": "Shellfish",
+    "icon": "🦀",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "5 days",
+      "tip": "Store loosely wrapped in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "9-12 months",
+      "tip": "Keep in original packaging or wrap tightly in foil"
+    },
+    "spoilSigns": [
+      "Strong ammonia or fishy smell",
+      "Slimy texture",
+      "Discoloration or dark spots"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Live Clams, Mussels, Crab and Oysters",
+    "category": "Shellfish",
+    "icon": "🦪",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store in breathable bag or damp cloth; never in sealed container or water"
+    },
+    "frozen": {
+      "unopened": "2-3 months",
+      "tip": "Cook before freezing for best results"
+    },
+    "spoilSigns": [
+      "Shell stays open when tapped (dead)",
+      "Strong off smell",
+      "Broken or cracked shells"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Live Lobsters",
+    "category": "Shellfish",
+    "icon": "🦞",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep in damp newspaper or seaweed in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Cook first, then freeze meat in airtight container"
+    },
+    "spoilSigns": [
+      "No movement or response when touched",
+      "Strong ammonia smell",
+      "Limp tail"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Lobster Tails",
+    "category": "Shellfish",
+    "icon": "🦞",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep in airtight container in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "3 months",
+      "tip": "Wrap tightly in freezer wrap or vacuum seal"
+    },
+    "spoilSigns": [
+      "Ammonia or strong fishy smell",
+      "Slimy texture",
+      "Discoloration"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Cooked Shellfish, All",
+    "category": "Shellfish",
+    "icon": "🦐",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store in airtight container; reheat thoroughly"
+    },
+    "frozen": {
+      "unopened": "3 months",
+      "tip": "Freeze in airtight container; thaw in refrigerator"
+    },
+    "spoilSigns": ["Off or sour smell", "Slimy texture", "Discoloration"]
+  },
+  {
+    "id": 52,
+    "name": "Herring (Smoked)",
+    "category": "Smoked Fish",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep tightly wrapped; store away from strong-smelling foods"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Wrap tightly in foil before freezing"
+    },
+    "spoilSigns": ["Off or rancid smell", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 53,
+    "name": "Salmon, Whitefish (Cold-Smoked)",
+    "category": "Smoked Fish",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "5-8 days",
+      "tip": "Keep tightly wrapped in original packaging"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Wrap in airtight packaging before freezing"
+    },
+    "spoilSigns": [
+      "Sour or rancid smell",
+      "Slimy surface",
+      "Mold or discoloration"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Salmon, Whitefish (Hot-Smoked)",
+    "category": "Smoked Fish",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "14 days or date on vacuum pkg",
+      "tip": "Keep in vacuum packaging until ready to use"
+    },
+    "frozen": {
+      "unopened": "6 months in vacuum pkg",
+      "tip": "Keep in original vacuum packaging for best results"
+    },
+    "spoilSigns": ["Off or rancid smell", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 55,
+    "name": "Beef, Lamb, Pork or Veal Chops, Steaks, Roasts",
+    "category": "Meat, Fresh",
+    "icon": "🥩",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-5 days",
+      "tip": "Store in coldest part of fridge; keep in original packaging or airtight wrap"
+    },
+    "frozen": {
+      "unopened": "4-12 months",
+      "tip": "Wrap tightly in freezer paper or vacuum seal; label with date"
+    },
+    "spoilSigns": [
+      "Sour or off smell",
+      "Slimy or sticky texture",
+      "Gray or brown discoloration beyond surface"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Ground Meat",
+    "category": "Meat, Fresh",
+    "icon": "🥩",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Use quickly; store in original packaging or airtight container"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in flat portions for faster thawing"
+    },
+    "spoilSigns": [
+      "Sour or off smell",
+      "Slimy or sticky texture",
+      "Gray or brown color throughout"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Variety Meats (Liver, Tongue, Chitterlings, etc.)",
+    "category": "Meat, Fresh",
+    "icon": "🥩",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Use very quickly; store in airtight container in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Wrap tightly before freezing; label with date"
+    },
+    "spoilSigns": [
+      "Strong or off smell",
+      "Slimy texture",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Cooked Meats (After Home Cooking)",
+    "category": "Meat, Fresh",
+    "icon": "🍖",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store in airtight container; reheat to 165°F before eating"
+    },
+    "frozen": {
+      "unopened": "2-3 months",
+      "tip": "Cool completely before freezing; freeze in meal-sized portions"
+    },
+    "spoilSigns": ["Off or sour smell", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 59,
+    "name": "Bacon",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🥓",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep tightly sealed; store in original packaging"
+    },
+    "frozen": {
+      "unopened": "1 month",
+      "tip": "Freeze in original packaging or wrap individual portions"
+    },
+    "spoilSigns": [
+      "Sour or off smell",
+      "Slimy texture",
+      "Green or gray discoloration"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Corned Beef, in Pouch with Pickling Juices",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🥩",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "5-7 days",
+      "tip": "Keep submerged in pickling juices; store tightly sealed"
+    },
+    "frozen": {
+      "unopened": "1 month",
+      "tip": "Drain pickling juices before freezing; wrap tightly"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Slimy texture",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Ham, Canned ('Keep Refrigerated' Label)",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🍖",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "6-9 months",
+      "tip": "Do not open until ready to use; keep refrigerated at all times"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Bulging or damaged can",
+      "Off smell when opened",
+      "Slimy texture"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Ham, Fully Cooked, Whole",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🍖",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep tightly wrapped; store in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Wrap tightly in foil or freezer wrap before freezing"
+    },
+    "spoilSigns": ["Off or sour smell", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 63,
+    "name": "Ham, Fully Cooked, Slices or Half",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🍖",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store in airtight container or tightly wrapped"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Wrap individual slices before freezing for easy use"
+    },
+    "spoilSigns": ["Off smell", "Slimy or sticky surface", "Discoloration"]
+  },
+  {
+    "id": 64,
+    "name": "Ham, Cook Before Eating",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🍖",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep in original packaging until ready to cook"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in original packaging or wrap tightly"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Slimy texture",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Hot Dogs, Sealed in Package",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🌭",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Keep in original sealed packaging; refrigerate immediately"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in original packaging or zip-lock bag"
+    },
+    "spoilSigns": ["Sour smell", "Slimy texture", "Discoloration or mold"]
+  },
+  {
+    "id": 66,
+    "name": "Hot Dogs, After Opening",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🌭",
+    "pantry": null,
+    "refrigerated": {
+      "opened": "1 week",
+      "tip": "Reseal tightly after opening; keep in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in airtight bag; separate with parchment paper"
+    },
+    "spoilSigns": [
+      "Sour or off smell",
+      "Slimy exterior",
+      "Mold or discoloration"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Lunch Meats, Sealed in Package",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🥪",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Keep sealed until ready to use; refrigerate immediately"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in original packaging or airtight bag"
+    },
+    "spoilSigns": ["Off smell", "Slimy texture", "Discoloration or mold"]
+  },
+  {
+    "id": 68,
+    "name": "Lunch Meats, After Opening",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🥪",
+    "pantry": null,
+    "refrigerated": {
+      "opened": "3-5 days",
+      "tip": "Reseal tightly after each use; avoid cross-contamination"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Separate slices with parchment paper before freezing"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Slimy surface",
+      "Discoloration or mold"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Sausage, Raw, Bulk Type",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🌭",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep in original packaging; use quickly after purchase"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in portion-sized amounts for convenience"
+    },
+    "spoilSigns": [
+      "Sour or off smell",
+      "Slimy texture",
+      "Gray or green discoloration"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Sausage, Smoked Links, Patties",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🌭",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep in original packaging or airtight container"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in original packaging or wrap individually"
+    },
+    "spoilSigns": ["Off smell", "Slimy texture", "Mold or discoloration"]
+  },
+  {
+    "id": 71,
+    "name": "Sausage, Hard/Dry (Pepperoni), Sliced",
+    "category": "Meat, Smoked or Processed",
+    "icon": "🍕",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2-3 weeks",
+      "tip": "Keep tightly wrapped; store in original packaging"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Wrap in foil or freezer bag before freezing"
+    },
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Mold growth beyond natural white mold on outside",
+      "Slimy texture"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Chicken or Turkey, Whole",
+    "category": "Poultry, Fresh",
+    "icon": "🍗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store in coldest part of fridge; keep in original packaging"
+    },
+    "frozen": {
+      "unopened": "12 months",
+      "tip": "Freeze in original packaging or wrap tightly in freezer wrap"
+    },
+    "spoilSigns": [
+      "Sour or off smell",
+      "Slimy texture under skin",
+      "Gray or discolored skin"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Chicken or Turkey, Parts",
+    "category": "Poultry, Fresh",
+    "icon": "🍗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep in original packaging or airtight container; store on lowest shelf"
+    },
+    "frozen": {
+      "unopened": "9 months",
+      "tip": "Wrap parts individually for easier use later"
+    },
+    "spoilSigns": ["Sour or off smell", "Slimy texture", "Discoloration"]
+  },
+  {
+    "id": 74,
+    "name": "Duckling or Goose, Whole",
+    "category": "Poultry, Fresh",
+    "icon": "🦆",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store in coldest part of fridge on a tray to catch drips"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Wrap tightly in freezer wrap or vacuum seal"
+    },
+    "spoilSigns": ["Off or sour smell", "Slimy texture", "Discolored skin"]
+  },
+  {
+    "id": 75,
+    "name": "Giblets",
+    "category": "Poultry, Fresh",
+    "icon": "🍗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Remove from whole bird and store separately in airtight container"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in airtight container or freezer bag"
+    },
+    "spoilSigns": ["Strong or off smell", "Slimy texture", "Discoloration"]
+  },
+  {
+    "id": 76,
+    "name": "Chicken Nuggets, Patties",
+    "category": "Poultry, Cooked or Processed",
+    "icon": "🍗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store in airtight container; reheat thoroughly before eating"
+    },
+    "frozen": {
+      "unopened": "1-3 months",
+      "tip": "Keep in original packaging or airtight freezer bag"
+    },
+    "spoilSigns": ["Off smell", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 77,
+    "name": "Cooked Poultry Dishes",
+    "category": "Poultry, Cooked or Processed",
+    "icon": "🍲",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store in airtight container; reheat to 165°F"
+    },
+    "frozen": {
+      "unopened": "4-6 months",
+      "tip": "Cool completely before freezing; freeze in meal-sized portions"
+    },
+    "spoilSigns": ["Off or sour smell", "Mold growth", "Slimy texture"]
+  },
+  {
+    "id": 78,
+    "name": "Fried Chicken",
+    "category": "Poultry, Cooked or Processed",
+    "icon": "🍗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store uncovered first to keep crispy, then wrap tightly"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Freeze on baking sheet first, then transfer to freezer bag"
+    },
+    "spoilSigns": ["Off or sour smell", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 79,
+    "name": "Ground Turkey or Chicken",
+    "category": "Poultry, Cooked or Processed",
+    "icon": "🍗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store in original packaging; use quickly after purchase"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in flat portions for faster thawing"
+    },
+    "spoilSigns": [
+      "Sour or off smell",
+      "Slimy or sticky texture",
+      "Gray discoloration throughout"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Lunch Meats, Sealed in Package (Poultry)",
+    "category": "Poultry, Cooked or Processed",
+    "icon": "🥪",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Keep sealed until ready to use"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in original packaging or airtight bag"
+    },
+    "spoilSigns": ["Off smell", "Slimy texture", "Discoloration or mold"]
+  },
+  {
+    "id": 81,
+    "name": "Lunch Meats, After Opening (Poultry)",
+    "category": "Poultry, Cooked or Processed",
+    "icon": "🥪",
+    "pantry": null,
+    "refrigerated": {
+      "opened": "3-5 days",
+      "tip": "Reseal tightly after each use"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Separate slices with parchment paper before freezing"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Slimy surface",
+      "Discoloration or mold"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Pieces Covered with Broth or Gravy",
+    "category": "Poultry, Cooked or Processed",
+    "icon": "🍲",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep in airtight container; ensure broth fully covers the pieces"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Freeze with broth or gravy in airtight container for best quality"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Mold growth on surface",
+      "Slimy texture of meat"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Rotisserie Chicken",
+    "category": "Poultry, Cooked or Processed",
+    "icon": "🍗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Remove from original container; store in airtight container"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Remove meat from bones before freezing; store in airtight container"
+    },
+    "spoilSigns": ["Off or sour smell", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 84,
     "name": "Apples",
     "category": "Fruits",
     "icon": "🍎",
-    "pantry": "1-2 days",
-    "pantryTip": "Store in a cool, dry place",
-    "refrigerated": "3 weeks",
-    "fridgeTip": "Keep in crisper drawer",
-    "frozen": "8 months (cooked)",
-    "freezerTip": "Freeze after slicing or cooking",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store at room temperature away from direct sunlight"
+    },
+    "refrigerated": {
+      "unopened": "3 weeks",
+      "tip": "Store in crisper drawer for best freshness"
+    },
+    "frozen": {
+      "unopened": "Cooked, 8 months",
+      "tip": "Cook or slice before freezing; treat with lemon juice to prevent browning"
+    },
     "spoilSigns": [
-      "Soft or mushy spots on the surface",
-      "Wrinkled skin or loss of firmness",
+      "Soft or mushy spots",
+      "Wrinkled or shriveled skin",
+      "Mold growth or fermented smell"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Apricots",
+    "category": "Fruits",
+    "icon": "🍑",
+    "pantry": {
+      "unopened": "Until ripe",
+      "tip": "Ripen at room temperature; keep away from direct sunlight"
+    },
+    "refrigerated": {
+      "unopened": "2-3 days",
+      "tip": "Refrigerate only after ripening"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mushy or overly soft texture",
+      "Off or fermented smell",
+      "Mold or discoloration"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Avocados",
+    "category": "Fruits",
+    "icon": "🥑",
+    "pantry": {
+      "unopened": "Until ripe",
+      "tip": "Place in a paper bag with a banana to speed up ripening"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Refrigerate only once ripe; sprinkle cut flesh with lemon juice to prevent browning"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Very dark or black skin with mushy texture",
+      "Sour or off smell",
+      "Stringy or brown flesh inside"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Bananas",
+    "category": "Fruits",
+    "icon": "🍌",
+    "pantry": {
+      "unopened": "Until ripe",
+      "tip": "Hang bananas to prevent bruising; keep away from other fruits"
+    },
+    "refrigerated": {
+      "unopened": "2 days, skin will blacken",
+      "tip": "Flesh stays fresh even if skin darkens in refrigerator"
+    },
+    "frozen": {
+      "unopened": "Whole peeled, 1 month",
+      "tip": "Peel before freezing; freeze in airtight bag for smoothies"
+    },
+    "spoilSigns": [
+      "Fully black skin with mushy flesh",
+      "Sour or fermented smell",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Berries, Cherries",
+    "category": "Fruits",
+    "icon": "🍓",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Do not wash until ready to eat; store in breathable container"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Freeze in a single layer on a baking sheet first, then transfer to bag"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Mushy or leaking texture",
+      "Off or fermented smell"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Citrus Fruit",
+    "category": "Fruits",
+    "icon": "🍊",
+    "pantry": {
+      "unopened": "10 days",
+      "tip": "Store in a cool, dry place away from direct sunlight"
+    },
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Store loose in crisper drawer; do not seal in airtight bag"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth on skin",
+      "Soft or mushy spots",
+      "Off or fermented smell"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Coconuts, Fresh",
+    "category": "Fruits",
+    "icon": "🥥",
+    "pantry": {
+      "unopened": "1 week",
+      "tip": "Store whole at room temperature; refrigerate once opened"
+    },
+    "refrigerated": {
+      "unopened": "2-3 weeks",
+      "tip": "Store shredded coconut in airtight container"
+    },
+    "frozen": {
+      "unopened": "Shredded, 6 months",
+      "tip": "Freeze shredded coconut in airtight freezer bag"
+    },
+    "spoilSigns": [
+      "Sour or rancid smell",
+      "Mold on shell or flesh",
+      "Discolored or slimy flesh"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Grapes",
+    "category": "Fruits",
+    "icon": "🍇",
+    "pantry": {
+      "unopened": "1 day",
+      "tip": "Keep in a cool spot; best stored in refrigerator"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Store unwashed in original bag in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "Whole, 1 month",
+      "tip": "Freeze whole on a baking sheet first; great as a frozen snack"
+    },
+    "spoilSigns": [
+      "Shriveled or mushy grapes",
+      "Mold growth",
+      "Fermented or vinegary smell"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Kiwi Fruit",
+    "category": "Fruits",
+    "icon": "🥝",
+    "pantry": {
+      "unopened": "Until ripe",
+      "tip": "Ripen at room temperature; keep away from direct sunlight"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Refrigerate once ripe; store away from strong-smelling foods"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Very soft or mushy texture",
+      "Shriveled skin",
+      "Off or fermented smell"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Melons",
+    "category": "Fruits",
+    "icon": "🍈",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Ripen whole melon at room temperature"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Wrap cut melon tightly; store cut side down"
+    },
+    "frozen": {
+      "unopened": "Balls, 1 month",
+      "tip": "Freeze melon balls in a single layer then transfer to airtight bag"
+    },
+    "spoilSigns": [
+      "Mushy or sunken spots",
+      "Sour or fermented smell",
+      "Mold growth on rind"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Papaya, Mango",
+    "category": "Fruits",
+    "icon": "🥭",
+    "pantry": {
+      "unopened": "3-5 days",
+      "tip": "Ripen at room temperature; place in paper bag to speed ripening"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Refrigerate once ripe; store cut fruit in airtight container"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mushy or overly soft texture",
+      "Sour or fermented smell",
+      "Mold or dark spots on flesh"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Peaches, Nectarines",
+    "category": "Fruits",
+    "icon": "🍑",
+    "pantry": {
+      "unopened": "Until ripe",
+      "tip": "Ripen at room temperature stem-side down; do not refrigerate unripe"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Refrigerate once ripe; store in a single layer"
+    },
+    "frozen": {
+      "unopened": "Sliced, lemon juice & sugar, 2 months",
+      "tip": "Toss slices in lemon juice and sugar before freezing to preserve color and flavor"
+    },
+    "spoilSigns": [
+      "Mushy or leaking texture",
+      "Mold growth",
+      "Off or fermented smell"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Pears, Plums",
+    "category": "Fruits",
+    "icon": "🍐",
+    "pantry": {
+      "unopened": "3-5 days",
+      "tip": "Ripen at room temperature; check daily for ripeness"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Refrigerate once ripe; store in crisper drawer"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mushy or overly soft texture",
+      "Mold growth",
       "Sour or fermented smell"
     ]
   },
   {
-    "id": 102,
-    "name": "Bananas",
-    "category": "Fruits",
-    "icon": "🍌",
-    "pantry": "Until ripe",
-    "pantryTip": "Keep at room temperature",
-    "refrigerated": "2 days",
-    "fridgeTip": "Skin may darken but inside stays fresh",
-    "frozen": "1 month (peeled)",
-    "freezerTip": "Peel before freezing",
+    "id": 97,
+    "name": "Artichokes, Whole",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store in a cool dry place; best refrigerated"
+    },
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Sprinkle with water and store in airtight bag in crisper drawer"
+    },
+    "frozen": null,
+    "spoilSigns": ["Brown or dried out leaves", "Mold growth", "Off smell"]
+  },
+  {
+    "id": 98,
+    "name": "Asparagus",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Stand upright in a jar with an inch of water; cover loosely with a bag"
+    },
+    "frozen": {
+      "unopened": "8 months",
+      "tip": "Blanch before freezing for best texture and color"
+    },
     "spoilSigns": [
-      "Overly mushy texture when peeled",
-      "Strong fermented or alcohol-like smell",
-      "Liquid leaking from fruit"
+      "Slimy or mushy tips",
+      "Strong off smell",
+      "Shriveled or dried stalks"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Beans, Green or Wax",
+    "category": "Vegetables",
+    "icon": "🫘",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store unwashed in airtight bag in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "8 months",
+      "tip": "Blanch before freezing; freeze in a single layer first"
+    },
+    "spoilSigns": [
+      "Slimy or mushy texture",
+      "Brown or dark discoloration",
+      "Off smell"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Beets",
+    "category": "Vegetables",
+    "icon": "🫚",
+    "pantry": {
+      "unopened": "1 day",
+      "tip": "Remove greens before storing; greens can be stored separately"
+    },
+    "refrigerated": {
+      "unopened": "7-10 days",
+      "tip": "Store in airtight bag in crisper drawer; keep greens separate"
+    },
+    "frozen": {
+      "unopened": "6-8 months",
+      "tip": "Cook and slice before freezing; store in airtight container"
+    },
+    "spoilSigns": ["Soft or mushy texture", "Mold growth", "Off smell"]
+  },
+  {
+    "id": 101,
+    "name": "Bok Choy",
+    "category": "Vegetables",
+    "icon": "🥬",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2-3 days",
+      "tip": "Store unwashed in a damp paper towel inside a bag in crisper"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing for best results"
+    },
+    "spoilSigns": ["Wilted or slimy leaves", "Brown discoloration", "Off smell"]
+  },
+  {
+    "id": 102,
+    "name": "Broccoli, Raab, Rapini",
+    "category": "Vegetables",
+    "icon": "🥦",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-5 days",
+      "tip": "Store unwashed in loose bag; do not seal tightly to allow airflow"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing; freeze in a single layer first"
+    },
+    "spoilSigns": [
+      "Yellow or brown florets",
+      "Slimy texture",
+      "Strong or off smell"
     ]
   },
   {
     "id": 103,
-    "name": "Berries",
-    "category": "Fruits",
-    "icon": "🍓",
+    "name": "Brussels Sprouts",
+    "category": "Vegetables",
+    "icon": "🥦",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "1-2 days",
-    "fridgeTip": "Store unwashed until use",
-    "frozen": "4 months",
-    "freezerTip": "Freeze in single layer first",
+    "refrigerated": {
+      "unopened": "3-5 days",
+      "tip": "Store unwashed on the stalk or in airtight bag in crisper"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing for best color and texture"
+    },
     "spoilSigns": [
-      "Visible mold on berries",
-      "Soft, mushy, or leaking texture",
-      "Sour or off smell"
+      "Yellow or wilted outer leaves",
+      "Off smell",
+      "Slimy texture"
     ]
   },
   {
     "id": 104,
-    "name": "Grapes",
-    "category": "Fruits",
-    "icon": "🍇",
-    "pantry": "1 day",
-    "pantryTip": "Keep in cool place",
-    "refrigerated": "1 week",
-    "fridgeTip": "Store in ventilated bag",
-    "frozen": "1 month",
-    "freezerTip": "Freeze whole or halved",
+    "name": "Cauliflower",
+    "category": "Vegetables",
+    "icon": "🥦",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-5 days",
+      "tip": "Store stem-side up in a loose bag to prevent moisture buildup"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing; freeze in a single layer first"
+    },
     "spoilSigns": [
-      "Wrinkled or shriveled skin",
-      "Sticky or leaking juice",
-      "Sour or fermented smell"
+      "Brown spots on florets",
+      "Soft or mushy texture",
+      "Off smell"
     ]
   },
   {
     "id": 105,
-    "name": "Melons",
-    "category": "Fruits",
-    "icon": "🍈",
-    "pantry": "1-2 days",
-    "pantryTip": "Store whole at room temperature",
-    "refrigerated": "3-4 days",
-    "fridgeTip": "Cover cut pieces",
-    "frozen": "1 month",
-    "freezerTip": "Freeze in chunks",
+    "name": "Cabbage",
+    "category": "Vegetables",
+    "icon": "🥬",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Keep whole head in crisper; wrap cut cabbage tightly"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing; freeze in wedges or shredded"
+    },
     "spoilSigns": [
-      "Slimy or wet surface on cut pieces",
-      "Sour or unpleasant smell",
-      "Soft spots or discoloration"
+      "Slimy or wilted outer leaves",
+      "Strong sulfur smell",
+      "Discoloration"
     ]
   },
   {
     "id": 106,
-    "name": "Peaches",
-    "category": "Fruits",
-    "icon": "🍑",
-    "pantry": "Until ripe",
-    "pantryTip": "Ripen at room temperature",
-    "refrigerated": "3-4 days",
-    "fridgeTip": "Store after ripening",
-    "frozen": "2 months",
-    "freezerTip": "Slice before freezing",
+    "name": "Carrots, Parsnips",
+    "category": "Vegetables",
+    "icon": "🥕",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3 weeks",
+      "tip": "Remove tops before storing; keep in airtight bag with a damp paper towel"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing; dice or slice for easy use"
+    },
     "spoilSigns": [
-      "Very soft or mushy texture",
-      "Wrinkled or collapsing skin",
-      "Fermented or sour smell"
+      "Slimy or mushy texture",
+      "Excessive white blush (dry out)",
+      "Mold growth"
     ]
   },
   {
     "id": 107,
-    "name": "Carrots",
+    "name": "Celery",
     "category": "Vegetables",
-    "icon": "🥕",
+    "icon": "🌿",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "3 weeks",
-    "fridgeTip": "Store in sealed bag",
-    "frozen": "10-12 months",
-    "freezerTip": "Blanch before freezing",
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Wrap in aluminum foil to keep crisp; store in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing; best used in cooked dishes after freezing"
+    },
     "spoilSigns": [
-      "Limp or rubbery texture",
-      "Black or dark spots",
-      "Slimy surface"
+      "Limp or rubbery stalks",
+      "Brown or slimy texture",
+      "Off smell"
     ]
   },
   {
     "id": 108,
-    "name": "Broccoli",
+    "name": "Corn on the Cob",
     "category": "Vegetables",
-    "icon": "🥦",
+    "icon": "🌽",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "3-5 days",
-    "fridgeTip": "Store in crisper drawer",
-    "frozen": "10-12 months",
-    "freezerTip": "Blanch before freezing",
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep in husk until ready to use; store in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "8 months",
+      "tip": "Blanch before freezing; can freeze on or off the cob"
+    },
     "spoilSigns": [
-      "Yellowing florets instead of green",
-      "Soft or limp texture",
-      "Strong unpleasant smell"
+      "Slimy or mushy kernels",
+      "Brown or black discoloration",
+      "Off or sour smell"
     ]
   },
   {
@@ -379,66 +1985,3736 @@
     "category": "Vegetables",
     "icon": "🥒",
     "pantry": null,
-    "pantryTip": "",
-    "refrigerated": "4-5 days",
-    "fridgeTip": "Store in crisper drawer",
-    "frozen": "Do not freeze",
-    "freezerTip": "",
+    "refrigerated": {
+      "unopened": "4-5 days",
+      "tip": "Wrap in paper towel and store in airtight bag; keep away from apples and tomatoes"
+    },
+    "frozen": null,
     "spoilSigns": [
-      "Soft or mushy texture",
-      "Wrinkled or shriveled skin",
-      "Slimy coating on surface"
+      "Soft or mushy ends",
+      "Slimy texture",
+      "Wrinkled or shriveled skin"
     ]
   },
   {
     "id": 110,
-    "name": "Potatoes",
+    "name": "Eggplant",
     "category": "Vegetables",
-    "icon": "🥔",
-    "pantry": "1-2 months",
-    "pantryTip": "Store in cool, dark place",
-    "refrigerated": "1-2 weeks",
-    "fridgeTip": "Avoid fridge if possible",
-    "frozen": "10-12 months (cooked)",
-    "freezerTip": "Freeze cooked or mashed",
+    "icon": "🍆",
+    "pantry": {
+      "unopened": "1 day",
+      "tip": "Store at room temperature away from direct sunlight; best used quickly"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store unwashed in a loose bag in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "6-8 months",
+      "tip": "Blanch or roast before freezing for best texture"
+    },
     "spoilSigns": [
-      "Sprouting eyes or green spots",
-      "Soft or shriveled texture",
-      "Musty or rotten smell"
+      "Soft or sunken spots",
+      "Shriveled or wrinkled skin",
+      "Off smell"
     ]
   },
   {
     "id": 111,
-    "name": "Onions",
+    "name": "Garlic",
     "category": "Vegetables",
-    "icon": "🧅",
-    "pantry": "2-3 weeks",
-    "pantryTip": "Store in dry, ventilated area",
-    "refrigerated": "2 months",
-    "fridgeTip": "Keep in sealed container",
-    "frozen": "10-12 months",
-    "freezerTip": "Chop before freezing",
+    "icon": "🧄",
+    "pantry": {
+      "unopened": "1 month",
+      "tip": "Store in a cool, dry, well-ventilated place; keep away from moisture"
+    },
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Store peeled or chopped garlic in airtight container"
+    },
+    "frozen": {
+      "unopened": "1 month",
+      "tip": "Freeze peeled cloves or minced garlic in an ice cube tray"
+    },
     "spoilSigns": [
-      "Soft or mushy layers inside",
-      "Strong rotten or sulfur smell",
-      "Visible mold or dark spots"
+      "Green sprouts (still edible but bitter)",
+      "Soft or mushy cloves",
+      "Mold growth or off smell"
     ]
   },
   {
     "id": 112,
-    "name": "Tomatoes",
-    "category": "Fruits",
-    "icon": "🍅",
-    "pantry": "Until ripe",
-    "pantryTip": "Ripen at room temperature",
-    "refrigerated": "2-3 days",
-    "fridgeTip": "Use quickly after refrigerating",
-    "frozen": "2 months",
-    "freezerTip": "Freeze whole or chopped",
+    "name": "Ginger Root",
+    "category": "Vegetables",
+    "icon": "🫚",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store at room temperature for short term only"
+    },
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Store unpeeled in airtight bag or wrap in paper towel"
+    },
+    "frozen": {
+      "unopened": "1 month",
+      "tip": "Freeze whole; grate directly from frozen for easy use"
+    },
     "spoilSigns": [
-      "Very soft or leaking texture",
-      "Wrinkled or split skin",
-      "Sour or fermented smell"
+      "Mold growth",
+      "Shriveled or dry texture",
+      "Off or sour smell"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Greens",
+    "category": "Vegetables",
+    "icon": "🥬",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store washed and dried in paper towels inside a bag"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing; squeeze out excess water before storing"
+    },
+    "spoilSigns": [
+      "Wilted or slimy leaves",
+      "Yellow or brown discoloration",
+      "Off smell"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Herbs, Fresh",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "7-10 days",
+      "tip": "Store stems in a glass of water like flowers; cover loosely with a bag"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Chop and freeze in olive oil in an ice cube tray"
+    },
+    "spoilSigns": [
+      "Wilted or slimy leaves",
+      "Brown or black discoloration",
+      "Off smell"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Leeks",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Store unwashed in a loose bag in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch and slice before freezing"
+    },
+    "spoilSigns": [
+      "Slimy outer layers",
+      "Brown or yellowed leaves",
+      "Off smell"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Lettuce, Iceberg",
+    "category": "Vegetables",
+    "icon": "🥬",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Keep whole head in original wrap; remove core and wrap in damp paper towel"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Slimy or brown outer leaves",
+      "Off smell",
+      "Wilted or soggy texture"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Lettuce, Leaf",
+    "category": "Vegetables",
+    "icon": "🥬",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-7 days",
+      "tip": "Wash, dry thoroughly, and store in paper towels inside a bag"
+    },
+    "frozen": null,
+    "spoilSigns": ["Slimy or brown leaves", "Wilted texture", "Off smell"]
+  },
+  {
+    "id": 118,
+    "name": "Mushrooms",
+    "category": "Vegetables",
+    "icon": "🍄",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2-3 days",
+      "tip": "Store in original packaging or paper bag; avoid airtight containers"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Sauté before freezing for best texture; do not freeze raw"
+    },
+    "spoilSigns": [
+      "Slimy or wet texture",
+      "Dark brown discoloration",
+      "Off or sour smell"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Okra",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2-3 days",
+      "tip": "Store dry and unwashed in a paper bag in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch before freezing; freeze in a single layer first"
+    },
+    "spoilSigns": ["Slimy texture", "Brown or black discoloration", "Off smell"]
+  },
+  {
+    "id": 120,
+    "name": "Onions, Dry",
+    "category": "Vegetables",
+    "icon": "🧅",
+    "pantry": {
+      "unopened": "2-3 weeks",
+      "tip": "Store in a cool, dry, well-ventilated place; keep away from potatoes"
+    },
+    "refrigerated": {
+      "unopened": "2 months",
+      "tip": "Store cut onions in airtight container"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Chop before freezing; no need to blanch"
+    },
+    "spoilSigns": [
+      "Soft or mushy texture",
+      "Mold growth",
+      "Off or strong rotten smell"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Onions, Spring or Green",
+    "category": "Vegetables",
+    "icon": "🧅",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Store in a glass of water or wrapped in a damp paper towel in a bag"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Chop and freeze in airtight bag; no need to blanch"
+    },
+    "spoilSigns": [
+      "Slimy or mushy texture",
+      "Yellowed or wilted tops",
+      "Off smell"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Parsley, Cilantro",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Store stems in a glass of water; cover loosely with a bag"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Chop and freeze in olive oil in ice cube trays"
+    },
+    "spoilSigns": [
+      "Slimy or wilted leaves",
+      "Yellow discoloration",
+      "Off smell"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Peppers, Bell or Chile",
+    "category": "Vegetables",
+    "icon": "🫑",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "4-5 days",
+      "tip": "Store whole in crisper drawer; store cut peppers in airtight container"
+    },
+    "frozen": {
+      "unopened": "6-8 months",
+      "tip": "Slice or dice before freezing; no need to blanch"
+    },
+    "spoilSigns": ["Soft or wrinkled skin", "Mold growth", "Off smell"]
+  },
+  {
+    "id": 124,
+    "name": "Potatoes",
+    "category": "Vegetables",
+    "icon": "🥔",
+    "pantry": {
+      "unopened": "1-2 months",
+      "tip": "Store in a cool, dark, well-ventilated place; keep away from onions"
+    },
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Refrigeration can cause sweetening; best stored in pantry"
+    },
+    "frozen": {
+      "unopened": "Cooked and mashed, 10-12 months",
+      "tip": "Cook before freezing; raw potatoes do not freeze well"
+    },
+    "spoilSigns": [
+      "Green skin (contains solanine; cut away before eating)",
+      "Soft or mushy texture with mold",
+      "Strong rotten smell"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Radishes",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "10-14 days",
+      "tip": "Remove greens before storing; keep in airtight bag with a damp paper towel"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Slimy or mushy texture",
+      "Off smell",
+      "Excessive softness or shriveling"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Rutabagas",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": {
+      "unopened": "1 week",
+      "tip": "Store in a cool, dry place away from direct sunlight"
+    },
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Store in airtight bag in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "8-10 months",
+      "tip": "Blanch before freezing; cube or mash before storing"
+    },
+    "spoilSigns": ["Soft or mushy spots", "Mold growth", "Off smell"]
+  },
+  {
+    "id": 127,
+    "name": "Spinach",
+    "category": "Vegetables",
+    "icon": "🥬",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Store washed and dried in paper towels inside a bag"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch and squeeze out excess water before freezing"
+    },
+    "spoilSigns": [
+      "Slimy or mushy leaves",
+      "Yellow or brown discoloration",
+      "Off smell"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Squash, Summer",
+    "category": "Vegetables",
+    "icon": "🥒",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "4-5 days",
+      "tip": "Store unwashed in a loose bag in crisper drawer"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Blanch and slice before freezing"
+    },
+    "spoilSigns": ["Soft or mushy spots", "Slimy texture", "Off smell"]
+  },
+  {
+    "id": 129,
+    "name": "Squash, Winter",
+    "category": "Vegetables",
+    "icon": "🎃",
+    "pantry": {
+      "unopened": "1 week",
+      "tip": "Store whole in a cool, dry place; do not refrigerate whole squash"
+    },
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Refrigerate only once cut; wrap tightly in plastic wrap"
+    },
+    "frozen": {
+      "unopened": "10-12 months",
+      "tip": "Cook and mash or cube before freezing"
+    },
+    "spoilSigns": [
+      "Soft or sunken spots on skin",
+      "Mold growth",
+      "Off smell when cut"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Turnips",
+    "category": "Vegetables",
+    "icon": "🌿",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Remove greens before storing; keep in airtight bag in crisper"
+    },
+    "frozen": {
+      "unopened": "8-10 months",
+      "tip": "Blanch before freezing; cube or slice for easy use"
+    },
+    "spoilSigns": ["Soft or mushy texture", "Mold growth", "Off smell"]
+  },
+  {
+    "id": 131,
+    "name": "Tomatoes",
+    "category": "Vegetables",
+    "icon": "🍅",
+    "pantry": {
+      "unopened": "Until ripe",
+      "tip": "Never refrigerate unripe tomatoes; store stem-side down at room temperature"
+    },
+    "refrigerated": {
+      "unopened": "2-3 days",
+      "tip": "Refrigerate only ripe tomatoes; let come to room temperature before eating"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Best used in cooked dishes after freezing; freeze whole or chopped"
+    },
+    "spoilSigns": [
+      "Soft or mushy spots",
+      "Mold growth",
+      "Off or fermented smell"
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Bagels",
+    "category": "Foods Purchased Frozen",
+    "icon": "🥯",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Store in airtight bag after thawing"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Slice before freezing for easy toasting straight from frozen"
+    },
+    "spoilSigns": ["Mold growth", "Hard or stale texture", "Off smell"]
+  },
+  {
+    "id": 133,
+    "name": "Bread Dough, Commercial",
+    "category": "Foods Purchased Frozen",
+    "icon": "🍞",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "After baking, 4-7 days",
+      "tip": "Thaw in refrigerator overnight before baking"
+    },
+    "frozen": {
+      "unopened": "Use-by date",
+      "tip": "Keep frozen until ready to thaw and bake; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Mold growth after baking",
+      "Off smell",
+      "Unusual discoloration of dough"
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Burritos, Sandwiches",
+    "category": "Foods Purchased Frozen",
+    "icon": "🌯",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Thaw in refrigerator; reheat thoroughly before eating"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Keep frozen until ready to use; do not refreeze after thawing"
+    },
+    "spoilSigns": ["Off smell after thawing", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 135,
+    "name": "Egg Substitutes",
+    "category": "Foods Purchased Frozen",
+    "icon": "🥚",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Date on carton",
+      "tip": "Once thawed, use by date on carton; do not refreeze"
+    },
+    "frozen": {
+      "unopened": "12 months",
+      "tip": "Keep frozen until ready to use; thaw in refrigerator"
+    },
+    "spoilSigns": [
+      "Off smell after thawing",
+      "Unusual color or texture",
+      "Past date on carton"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Fish, Breaded",
+    "category": "Foods Purchased Frozen",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Do not defrost. Cook frozen.",
+      "tip": "Cook directly from frozen for best texture; do not thaw before cooking"
+    },
+    "frozen": {
+      "unopened": "3-6 months",
+      "tip": "Keep frozen until ready to cook; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Freezer burn or ice crystals on coating",
+      "Off smell when cooked",
+      "Soggy or discolored breading"
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Fish, Raw",
+    "category": "Foods Purchased Frozen",
+    "icon": "🐟",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Thaw in refrigerator overnight; cook promptly after thawing"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Keep in original packaging or vacuum seal; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Strong fishy or ammonia smell after thawing",
+      "Slimy texture",
+      "Discolored or dull flesh"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Fruit (Berries, Melons)",
+    "category": "Foods Purchased Frozen",
+    "icon": "🍓",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "4-5 days",
+      "tip": "Thaw in refrigerator; use in smoothies or cooked dishes if texture changes"
+    },
+    "frozen": {
+      "unopened": "4-6 months",
+      "tip": "Keep sealed; do not refreeze once thawed"
+    },
+    "spoilSigns": [
+      "Off or fermented smell",
+      "Mold growth",
+      "Mushy or leaking texture after thawing"
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Guacamole",
+    "category": "Foods Purchased Frozen",
+    "icon": "🥑",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Press plastic wrap directly on surface to prevent browning after thawing"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in airtight container; thaw in refrigerator overnight"
+    },
+    "spoilSigns": [
+      "Brown or gray discoloration throughout",
+      "Off or sour smell",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Ice Cream",
+    "category": "Foods Purchased Frozen",
+    "icon": "🍦",
+    "pantry": null,
+    "refrigerated": null,
+    "frozen": {
+      "unopened": "2-4 months",
+      "tip": "Press plastic wrap on surface before replacing lid to prevent ice crystals"
+    },
+    "spoilSigns": [
+      "Large ice crystals or freezer burn on surface",
+      "Off or rancid smell",
+      "Gummy or icy texture throughout"
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Juice Concentrates",
+    "category": "Foods Purchased Frozen",
+    "icon": "🧃",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "7-10 days",
+      "tip": "After mixing, store reconstituted juice tightly sealed in refrigerator"
+    },
+    "frozen": {
+      "unopened": "6-12 months",
+      "tip": "Keep frozen until ready to use; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Off or fermented smell",
+      "Unusual color after reconstituting",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Lobster Tails",
+    "category": "Foods Purchased Frozen",
+    "icon": "🦞",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 days",
+      "tip": "Thaw in refrigerator; cook promptly after thawing"
+    },
+    "frozen": {
+      "unopened": "3 months",
+      "tip": "Keep in original packaging; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Ammonia or strong fishy smell after thawing",
+      "Slimy texture",
+      "Discoloration"
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Pancakes, Waffles",
+    "category": "Foods Purchased Frozen",
+    "icon": "🥞",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Reheat in toaster or oven for best texture after thawing"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Keep sealed in original packaging; toast directly from frozen"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off smell",
+      "Stale or freezer-burned texture"
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Sausages, Uncooked",
+    "category": "Foods Purchased Frozen",
+    "icon": "🌭",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Thaw in refrigerator; cook thoroughly before eating"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Keep in original packaging or airtight bag; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Off or sour smell after thawing",
+      "Slimy texture",
+      "Gray or green discoloration"
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Sausages, Precooked",
+    "category": "Foods Purchased Frozen",
+    "icon": "🌭",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Reheat thoroughly before eating; store in airtight container"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Keep in original packaging or airtight bag"
+    },
+    "spoilSigns": ["Off smell", "Slimy texture", "Mold or discoloration"]
+  },
+  {
+    "id": 146,
+    "name": "Sherbet, Sorbet",
+    "category": "Foods Purchased Frozen",
+    "icon": "🍧",
+    "pantry": null,
+    "refrigerated": null,
+    "frozen": {
+      "unopened": "2-4 months",
+      "tip": "Press plastic wrap on surface before replacing lid to prevent ice crystals"
+    },
+    "spoilSigns": [
+      "Large ice crystals on surface",
+      "Off or unusual smell",
+      "Significant texture change"
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Shrimp, Shellfish",
+    "category": "Foods Purchased Frozen",
+    "icon": "🦐",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Thaw in refrigerator or under cold running water; cook promptly"
+    },
+    "frozen": {
+      "unopened": "12 months",
+      "tip": "Keep in original packaging or airtight bag; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Ammonia or strong fishy smell",
+      "Slimy texture",
+      "Black spots or discoloration"
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Soy Crumbles and Hotdogs",
+    "category": "Foods Purchased Frozen",
+    "icon": "🌭",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Thaw in refrigerator; keep sealed after opening"
+    },
+    "frozen": {
+      "unopened": "9 months",
+      "tip": "Keep in original packaging; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Off smell after thawing",
+      "Slimy texture",
+      "Mold or discoloration"
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Soy Meat Substitutes",
+    "category": "Foods Purchased Frozen",
+    "icon": "🥩",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 weeks",
+      "tip": "Thaw in refrigerator; keep tightly sealed after opening"
+    },
+    "frozen": {
+      "unopened": "12-18 months",
+      "tip": "Keep in original packaging; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Off smell after thawing",
+      "Slimy texture",
+      "Mold or unusual discoloration"
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Tempeh",
+    "category": "Foods Purchased Frozen",
+    "icon": "🟫",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Thaw in refrigerator; store in airtight container after opening"
+    },
+    "frozen": {
+      "unopened": "12 months",
+      "tip": "Keep in original packaging; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Off or ammonia smell",
+      "Slimy texture",
+      "Unusual mold beyond natural white coating"
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Topping, Whipped",
+    "category": "Foods Purchased Frozen",
+    "icon": "🍦",
+    "pantry": null,
+    "refrigerated": null,
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Thaw in refrigerator before use; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Off smell after thawing",
+      "Watery or separated texture",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 152,
+    "name": "TV Dinners, Entrees, Breakfast",
+    "category": "Foods Purchased Frozen",
+    "icon": "🍱",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Do not defrost. Cook frozen.",
+      "tip": "Cook directly from frozen per package instructions"
+    },
+    "frozen": {
+      "unopened": "3 months",
+      "tip": "Keep frozen until ready to cook; do not refreeze after thawing"
+    },
+    "spoilSigns": [
+      "Damaged or torn packaging with freezer burn",
+      "Off smell when cooked",
+      "Unusual discoloration of contents"
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Vegetables",
+    "category": "Foods Purchased Frozen",
+    "icon": "🥦",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "After thawing, use promptly; do not refreeze"
+    },
+    "frozen": {
+      "unopened": "8 months",
+      "tip": "Keep sealed; cook directly from frozen for best texture and nutrition"
+    },
+    "spoilSigns": [
+      "Freezer burn or large ice crystals",
+      "Off smell after thawing",
+      "Mushy or discolored texture"
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Main Dishes or Meals, Hot or Refrigerated",
+    "category": "Deli Foods",
+    "icon": "🍲",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Reheat to 165°F before eating; store in airtight container"
+    },
+    "frozen": {
+      "unopened": "2-3 months",
+      "tip": "Cool completely before freezing; freeze in meal-sized portions"
+    },
+    "spoilSigns": ["Off or sour smell", "Mold growth", "Slimy texture"]
+  },
+  {
+    "id": 155,
+    "name": "Meats Covered with Gravy or Broth",
+    "category": "Deli Foods",
+    "icon": "🍖",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep submerged in gravy or broth; reheat thoroughly before eating"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Freeze with gravy or broth in airtight container for best quality"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Mold growth on surface",
+      "Slimy texture of meat"
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Commercial Brand Vacuum Packed Dinners with USDA Seal",
+    "category": "Deli Foods",
+    "icon": "📦",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "tip": "Keep sealed until ready to eat; refrigerate immediately after purchase"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Swollen or damaged vacuum packaging",
+      "Off smell when opened",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Chicken, Rotisserie or Fried",
+    "category": "Deli Foods",
+    "icon": "🍗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store in airtight container; reheat to 165°F before eating"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Remove meat from bones before freezing; store in airtight container"
+    },
+    "spoilSigns": ["Off or sour smell", "Slimy texture", "Mold growth"]
+  },
+  {
+    "id": 158,
+    "name": "Luncheon Meats, Store-Sliced",
+    "category": "Deli Foods",
+    "icon": "🥪",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-5 days",
+      "tip": "Keep tightly wrapped; store in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Separate slices with parchment paper before freezing"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Slimy surface",
+      "Discoloration or mold"
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Paté",
+    "category": "Deli Foods",
+    "icon": "🫙",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep tightly sealed; store in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Freeze in small portions in airtight container"
+    },
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Mold growth",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Cheese, Store-Sliced Hard (Cheddar, Swiss)",
+    "category": "Deli Foods",
+    "icon": "🧀",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 weeks",
+      "tip": "Wrap tightly in wax paper or plastic wrap; keep in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Wrap individually before freezing; texture may crumble after thawing"
+    },
+    "spoilSigns": [
+      "Mold growth beyond surface",
+      "Off or rancid smell",
+      "Slimy texture"
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Cheese, Soft (Brie, Bel Paese, Goat, Fresh Mozzarella)",
+    "category": "Deli Foods",
+    "icon": "🧀",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Store in original packaging or loosely wrapped; keep in coldest part of fridge"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Texture may change after freezing; best used in cooked dishes"
+    },
+    "spoilSigns": [
+      "Unusual mold beyond natural rind",
+      "Ammonia-like smell",
+      "Slimy texture"
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Salads Containing Meat, Fish, Poultry or Eggs",
+    "category": "Deli Foods",
+    "icon": "🥗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep tightly sealed; store in coldest part of fridge"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or sour smell",
+      "Slimy texture",
+      "Mold growth or discoloration"
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Salads, Vegetable",
+    "category": "Deli Foods",
+    "icon": "🥗",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-5 days",
+      "tip": "Keep tightly sealed; store dressing separately to extend freshness"
+    },
+    "frozen": null,
+    "spoilSigns": ["Wilted or slimy vegetables", "Off smell", "Mold growth"]
+  },
+  {
+    "id": 164,
+    "name": "Side Dishes (Cooked Vegetables, Rice or Potatoes)",
+    "category": "Deli Foods",
+    "icon": "🍚",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Store in airtight container; reheat thoroughly before eating"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Cool completely before freezing; freeze in portion-sized containers"
+    },
+    "spoilSigns": ["Off or sour smell", "Mold growth", "Slimy texture"]
+  },
+  {
+    "id": 165,
+    "name": "Olives",
+    "category": "Deli Foods",
+    "icon": "🫒",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "2 weeks",
+      "opened": "Package date; 2 days after opening",
+      "tip": "Keep submerged in brine in airtight container"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Slimy texture",
+      "Mold growth in brine"
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Pudding",
+    "category": "Deli Foods",
+    "icon": "🍮",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Package date",
+      "opened": "2 days after opening",
+      "tip": "Cover surface with plastic wrap to prevent skin from forming"
+    },
+    "frozen": null,
+    "spoilSigns": ["Mold growth", "Off smell", "Watery separation"]
+  },
+  {
+    "id": 167,
+    "name": "Fruit, Cut",
+    "category": "Deli Foods",
+    "icon": "🍓",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "Package date",
+      "opened": "4 days after opening",
+      "tip": "Keep tightly sealed; sprinkle with lemon juice to slow browning"
+    },
+    "frozen": {
+      "unopened": "2-3 months",
+      "tip": "Freeze in airtight container; best used in smoothies after freezing"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off or fermented smell",
+      "Mushy or slimy texture"
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Cheesecake",
+    "category": "Deli Foods",
+    "icon": "🍰",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Cover tightly; keep in coldest part of fridge away from strong odors"
+    },
+    "frozen": {
+      "unopened": "2-3 months",
+      "tip": "Freeze uncovered first until solid, then wrap tightly in plastic and foil"
+    },
+    "spoilSigns": [
+      "Mold growth on surface",
+      "Off or sour smell",
+      "Watery or cracked surface with discoloration"
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Baby Food, Jars or Cans - Fruits & Vegetables",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍼",
+    "pantry": {
+      "unopened": "Use-by date",
+      "tip": "Store in cool, dry place; never use past use-by date for baby food"
+    },
+    "refrigerated": {
+      "opened": "2-3 days",
+      "tip": "Transfer to airtight container after opening; never feed from jar and return to fridge"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Bulging or damaged lid",
+      "Off smell when opened",
+      "Unusual color or texture"
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Baby Food, Jars or Cans - Meats & Eggs",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍼",
+    "pantry": {
+      "unopened": "Use-by date",
+      "tip": "Store in cool, dry place; never use past use-by date for baby food"
+    },
+    "refrigerated": {
+      "opened": "1 day",
+      "tip": "Use within 1 day of opening; never feed from jar and return to fridge"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Bulging or damaged lid",
+      "Off smell when opened",
+      "Unusual color or texture"
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Baby Food - Cereal, Dry Mixes",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍼",
+    "pantry": {
+      "unopened": "Use-by date",
+      "opened": "2 months",
+      "tip": "Keep sealed in original container; store in cool, dry place"
+    },
+    "refrigerated": {
+      "opened": "1-2 days",
+      "tip": "Refrigerate only if mixed with liquid; use promptly"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off smell",
+      "Clumping or moisture in dry mix",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Baby Food - Formula",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍼",
+    "pantry": {
+      "unopened": "Use-by date",
+      "tip": "Store in cool, dry place; never use past use-by date"
+    },
+    "refrigerated": {
+      "opened": "1-2 days",
+      "tip": "Refrigerate prepared formula immediately; discard after 1-2 days"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off smell",
+      "Unusual color or consistency",
+      "Past use-by date"
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Bacon Bits, Imitation",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥓",
+    "pantry": {
+      "unopened": "4 months",
+      "opened": "4 months",
+      "tip": "Keep sealed in original container; store in cool, dry place"
+    },
+    "refrigerated": {
+      "opened": "Refer to jar",
+      "tip": "Check jar label for refrigeration instructions after opening"
+    },
+    "frozen": null,
+    "spoilSigns": ["Off or rancid smell", "Clumping or moisture", "Mold growth"]
+  },
+  {
+    "id": 174,
+    "name": "Beans, Dried",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫘",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "12 months",
+      "tip": "Store in airtight container in cool, dry place; older beans take longer to cook"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Mold or moisture in container",
+      "Off smell",
+      "Visible insects or debris"
+    ]
+  },
+  {
+    "id": 175,
+    "name": "Canned Goods, Low Acid (Meat, Poultry, Fish, Gravy, Stew, Soups, Beans, Carrots, Corn, Pasta, Peas, Potatoes, Spinach)",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥫",
+    "pantry": {
+      "unopened": "2-5 years",
+      "tip": "Store in cool, dry place; rotate stock using oldest first"
+    },
+    "refrigerated": {
+      "opened": "3-4 days",
+      "tip": "Transfer to airtight container after opening; never store in open can"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Bulging, rusting, or dented can",
+      "Spurting liquid or off smell when opened",
+      "Unusual color or mold inside"
+    ]
+  },
+  {
+    "id": 176,
+    "name": "Canned Goods, High Acid (Juices, Fruit, Pickles, Sauerkraut, Tomato Soup, Vinegar-Based Sauces)",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥫",
+    "pantry": {
+      "unopened": "12-18 months",
+      "tip": "Store in cool, dry place; rotate stock using oldest first"
+    },
+    "refrigerated": {
+      "opened": "5-7 days",
+      "tip": "Transfer to airtight container after opening; never store in open can"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Bulging, rusting, or dented can",
+      "Spurting liquid or off smell when opened",
+      "Unusual color or mold inside"
+    ]
+  },
+  {
+    "id": 177,
+    "name": "Cereal, Ready-to-Eat",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥣",
+    "pantry": {
+      "unopened": "6-12 months",
+      "opened": "3 months",
+      "tip": "Keep sealed tightly; store in cool, dry place away from moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Stale or rancid smell", "Clumping or moisture", "Off taste"]
+  },
+  {
+    "id": 178,
+    "name": "Cereal, Cook Before Eating (Oatmeal, etc.)",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥣",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "6-12 months",
+      "tip": "Keep sealed in original container; store in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Clumping or moisture",
+      "Visible insects or mold"
+    ]
+  },
+  {
+    "id": 179,
+    "name": "Coffee, Whole Beans / Non-Vacuum Bag",
+    "category": "Shelf-Stable Foods",
+    "icon": "☕",
+    "pantry": {
+      "unopened": "1-3 weeks",
+      "opened": "1 week",
+      "tip": "Store in airtight container away from light, heat, and moisture"
+    },
+    "refrigerated": {
+      "opened": "For all types: 3-4 months frozen; 2 weeks refrigerated",
+      "tip": "Refrigeration can cause condensation; airtight container is essential"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in airtight container; thaw at room temperature before opening"
+    },
+    "spoilSigns": [
+      "Stale or flat aroma",
+      "Rancid or off smell",
+      "Visible mold or moisture"
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Coffee, Ground, in Cans",
+    "category": "Shelf-Stable Foods",
+    "icon": "☕",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "1 week",
+      "tip": "Store in airtight container in cool, dark place after opening"
+    },
+    "refrigerated": {
+      "opened": "For all types: 3-4 months frozen; 2 weeks refrigerated",
+      "tip": "Keep in airtight container to prevent moisture absorption"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in airtight container; thaw at room temperature before opening"
+    },
+    "spoilSigns": [
+      "Stale or flat aroma",
+      "Rancid or off smell",
+      "Clumping due to moisture"
+    ]
+  },
+  {
+    "id": 181,
+    "name": "Coffee, Instant / Jars and Tins",
+    "category": "Shelf-Stable Foods",
+    "icon": "☕",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "2-3 months",
+      "tip": "Keep sealed tightly; avoid moisture entering the container"
+    },
+    "refrigerated": {
+      "opened": "For all types: 3-4 months frozen; 2 weeks refrigerated",
+      "tip": "Keep in airtight container to prevent clumping"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in airtight container; thaw at room temperature before opening"
+    },
+    "spoilSigns": [
+      "Clumping or hardening",
+      "Off or stale smell",
+      "Mold or moisture in container"
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Baking Powder",
+    "category": "Baking Ingredients",
+    "icon": "🧂",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "3 months",
+      "tip": "Keep sealed tightly; test potency by adding to hot water—it should bubble"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "No bubbling when tested in hot water",
+      "Clumping due to moisture",
+      "Off smell"
+    ]
+  },
+  {
+    "id": 183,
+    "name": "Baking Soda",
+    "category": "Baking Ingredients",
+    "icon": "🧂",
+    "pantry": {
+      "unopened": "18 months",
+      "opened": "6 months",
+      "tip": "Keep sealed; store away from strong odors as it absorbs smells"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "No fizzing when tested with vinegar",
+      "Clumping due to moisture",
+      "Absorbed odors affecting baked goods"
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Biscuit or Pancake Mix",
+    "category": "Baking Ingredients",
+    "icon": "🥞",
+    "pantry": {
+      "unopened": "15 months",
+      "opened": "Pkg use-by date",
+      "tip": "Keep sealed in original container or transfer to airtight container"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Clumping or moisture",
+      "Visible mold or insects"
+    ]
+  },
+  {
+    "id": 185,
+    "name": "Cake, Brownie, Bread Mixes",
+    "category": "Baking Ingredients",
+    "icon": "🎂",
+    "pantry": {
+      "unopened": "12-18 months",
+      "opened": "Pkg use-by date",
+      "tip": "Keep sealed in original box or transfer to airtight container"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Clumping or moisture",
+      "Visible mold or insects"
+    ]
+  },
+  {
+    "id": 186,
+    "name": "Cornmeal, Regular / Degerminated",
+    "category": "Baking Ingredients",
+    "icon": "🌽",
+    "pantry": {
+      "unopened": "6-12 months",
+      "tip": "Store in airtight container in cool, dry place"
+    },
+    "refrigerated": {
+      "opened": "12 months",
+      "tip": "Refrigerate after opening to extend shelf life"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or off smell",
+      "Clumping or moisture",
+      "Visible mold or insects"
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Cornmeal, Stone Ground or Blue",
+    "category": "Baking Ingredients",
+    "icon": "🌽",
+    "pantry": {
+      "unopened": "1 month",
+      "tip": "Higher oil content; best kept refrigerated or frozen after opening"
+    },
+    "refrigerated": {
+      "opened": "2-3 months",
+      "tip": "Store in airtight container; higher oil content means faster spoilage"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or off smell",
+      "Clumping or moisture",
+      "Visible mold"
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Cornstarch",
+    "category": "Baking Ingredients",
+    "icon": "🧂",
+    "pantry": {
+      "unopened": "18 months",
+      "opened": "18 months",
+      "tip": "Keep sealed tightly; store away from moisture and heat"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Clumping due to moisture", "Off smell", "Discoloration"]
+  },
+  {
+    "id": 189,
+    "name": "Flour, White",
+    "category": "Baking Ingredients",
+    "icon": "🌾",
+    "pantry": {
+      "unopened": "6-12 months",
+      "opened": "6-8 months",
+      "tip": "Store in airtight container in cool, dry place; keep away from moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Musty or rancid smell",
+      "Clumping or moisture",
+      "Visible mold or insects"
+    ]
+  },
+  {
+    "id": 190,
+    "name": "Flour, Whole Wheat",
+    "category": "Baking Ingredients",
+    "icon": "🌾",
+    "pantry": {
+      "unopened": "1 month",
+      "tip": "Higher oil content; refrigerate or freeze after opening for longer life"
+    },
+    "refrigerated": {
+      "opened": "6-8 months",
+      "tip": "Store in airtight container; whole wheat flour goes rancid faster than white"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or musty smell",
+      "Clumping or moisture",
+      "Visible mold or insects"
+    ]
+  },
+  {
+    "id": 191,
+    "name": "Frosting, Canned",
+    "category": "Baking Ingredients",
+    "icon": "🎂",
+    "pantry": {
+      "unopened": "10 months",
+      "opened": "3 months",
+      "tip": "Keep sealed; store in cool, dry place after opening"
+    },
+    "refrigerated": {
+      "opened": "1 week",
+      "tip": "Refrigerate after opening for best quality; bring to room temperature before using"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Mold growth",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 192,
+    "name": "Frosting Mixes",
+    "category": "Baking Ingredients",
+    "icon": "🎂",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "3 months",
+      "tip": "Keep sealed in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Clumping or moisture",
+      "Visible mold"
+    ]
+  },
+  {
+    "id": 193,
+    "name": "Chocolate, Unsweetened and Semi-Sweet, Solid",
+    "category": "Baking Ingredients",
+    "icon": "🍫",
+    "pantry": {
+      "unopened": "18-24 months",
+      "tip": "Store in cool, dry place away from strong odors; wrap tightly after opening"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "White bloom on surface (fat bloom — still safe but flavor affected)",
+      "Off or rancid smell",
+      "Unusual bitter or sour taste"
+    ]
+  },
+  {
+    "id": 194,
+    "name": "Chocolate Syrup",
+    "category": "Baking Ingredients",
+    "icon": "🍫",
+    "pantry": {
+      "unopened": "2 years",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "6 months",
+      "tip": "Keep tightly sealed in refrigerator after opening"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or rancid smell",
+      "Significant thickening or separation"
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Cocoa and Cocoa Mixes",
+    "category": "Baking Ingredients",
+    "icon": "☕",
+    "pantry": {
+      "unopened": "Indefinitely",
+      "opened": "1 year",
+      "tip": "Keep sealed tightly in cool, dry place away from moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Clumping due to moisture",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 196,
+    "name": "Barbecue Sauce, Bottled",
+    "category": "Condiments",
+    "icon": "🍖",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1 month",
+      "tip": "Refrigerate after opening for best quality"
+    },
+    "refrigerated": {
+      "opened": "4 months",
+      "tip": "Keep tightly sealed; store in door of refrigerator"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or rancid smell",
+      "Unusual separation or discoloration"
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Ketchup, Cocktail or Chili Sauce",
+    "category": "Condiments",
+    "icon": "🍅",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1 month",
+      "tip": "Refrigerate after opening; store upside down to keep seal moist"
+    },
+    "refrigerated": {
+      "opened": "6 months",
+      "tip": "Keep tightly sealed; refrigerate after opening"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off smell",
+      "Darkening or separation beyond normal"
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Chutney",
+    "category": "Condiments",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "12 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "1-2 months",
+      "tip": "Keep tightly sealed in refrigerator after opening"
+    },
+    "frozen": null,
+    "spoilSigns": ["Mold growth", "Off smell", "Unusual discoloration"]
+  },
+  {
+    "id": 199,
+    "name": "Horseradish, in Jar",
+    "category": "Condiments",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "12 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "3-4 months",
+      "tip": "Keep tightly sealed; potency diminishes over time once opened"
+    },
+    "frozen": null,
+    "spoilSigns": ["Brown discoloration", "Off or rancid smell", "Mold growth"]
+  },
+  {
+    "id": 200,
+    "name": "Mayonnaise, Commercial",
+    "category": "Condiments",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "2-3 months",
+      "tip": "Store in cool, dry place; refrigerate immediately after opening"
+    },
+    "refrigerated": {
+      "opened": "2 months",
+      "tip": "Keep tightly sealed; never leave out at room temperature after opening"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Separation or watery texture",
+      "Mold growth or discoloration"
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Mustard",
+    "category": "Condiments",
+    "icon": "🟡",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1 month",
+      "tip": "Can be stored at room temperature after opening but refrigeration extends quality"
+    },
+    "refrigerated": {
+      "opened": "12 months",
+      "tip": "Keep tightly sealed; refrigerate for best flavor retention"
+    },
+    "frozen": null,
+    "spoilSigns": ["Mold growth", "Off smell", "Unusual discoloration"]
+  },
+  {
+    "id": 202,
+    "name": "Olives, Black and Green",
+    "category": "Condiments",
+    "icon": "🫒",
+    "pantry": {
+      "unopened": "12-18 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "2 weeks",
+      "tip": "Keep submerged in brine in airtight container"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth in brine",
+      "Off or rancid smell",
+      "Slimy texture"
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Pickles",
+    "category": "Condiments",
+    "icon": "🥒",
+    "pantry": {
+      "unopened": "12 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "1-2 weeks",
+      "tip": "Keep submerged in brine; use clean utensils to avoid contamination"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth in brine",
+      "Off smell",
+      "Slimy texture or cloudy brine"
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Salad Dressings, Commercial, Bottled",
+    "category": "Condiments",
+    "icon": "🥗",
+    "pantry": {
+      "unopened": "10-12 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "3 months",
+      "tip": "Keep tightly sealed; shake well before use as separation is normal"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or rancid smell",
+      "Unusual separation that doesn't mix back"
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Salsa, Picante & Taco Sauces",
+    "category": "Condiments",
+    "icon": "🌶️",
+    "pantry": {
+      "unopened": "12 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "1 month",
+      "tip": "Keep tightly sealed; use clean utensils to avoid contamination"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or fermented smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Cookies, Packaged",
+    "category": "Cookies",
+    "icon": "🍪",
+    "pantry": {
+      "unopened": "2 months",
+      "opened": "4 weeks",
+      "tip": "Keep sealed in airtight container; store away from moisture and heat"
+    },
+    "refrigerated": {
+      "unopened": "8-12 months frozen",
+      "tip": "Freeze for long-term storage; thaw at room temperature"
+    },
+    "frozen": {
+      "unopened": "8-12 months",
+      "tip": "Freeze in airtight container or original packaging; thaw at room temperature"
+    },
+    "spoilSigns": [
+      "Stale or off smell",
+      "Mold growth",
+      "Soggy or unusually hard texture"
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Crackers",
+    "category": "Crackers",
+    "icon": "🫓",
+    "pantry": {
+      "unopened": "8 months",
+      "opened": "1 month",
+      "tip": "Keep sealed in airtight container; store away from moisture"
+    },
+    "refrigerated": {
+      "unopened": "Freeze or refrigerate 3-4 months",
+      "tip": "Freeze or refrigerate for extended storage; bring to room temperature before serving"
+    },
+    "frozen": {
+      "unopened": "3-4 months",
+      "tip": "Freeze in airtight container; thaw at room temperature before serving"
+    },
+    "spoilSigns": [
+      "Stale or rancid smell",
+      "Soft or soggy texture",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Diet Powder Mixes",
+    "category": "Shelf-Stable Foods",
+    "icon": "🧉",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "3 months",
+      "tip": "Keep sealed tightly; store in cool, dry place away from moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping or moisture in powder",
+      "Off or rancid smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Extracts, Vanilla, Lemon, etc.",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "3 years",
+      "opened": "1 year",
+      "tip": "Store in cool, dark place; keep tightly sealed to preserve potency"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Loss of aroma or potency",
+      "Off smell",
+      "Cloudiness or unusual sediment"
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Fruits, Dried",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍇",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "1 month",
+      "tip": "Store in airtight container in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "6 months",
+      "tip": "Keep in airtight container; refrigeration extends freshness significantly"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or fermented smell",
+      "Extremely hard or sticky texture"
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Garlic, Chopped, Commercial Jars",
+    "category": "Shelf-Stable Foods",
+    "icon": "🧄",
+    "pantry": {
+      "unopened": "18 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "Refrigerate; use by date on jar",
+      "tip": "Keep tightly sealed; always use clean utensils to avoid contamination"
+    },
+    "frozen": null,
+    "spoilSigns": ["Off or sour smell", "Mold growth", "Unusual discoloration"]
+  },
+  {
+    "id": 212,
+    "name": "Garlic, Chopped, Commercial Jars (Opened)",
+    "category": "Shelf-Stable Foods",
+    "icon": "🧄",
+    "pantry": {
+      "unopened": "8 months",
+      "opened": "Use all or reseal for 3-4 months",
+      "tip": "Reseal tightly; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "Refrigerate; use by date on jar",
+      "tip": "Keep tightly sealed in refrigerator after opening"
+    },
+    "frozen": null,
+    "spoilSigns": ["Off or sour smell", "Mold growth", "Unusual discoloration"]
+  },
+  {
+    "id": 213,
+    "name": "Gelatin, Flavored",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍮",
+    "pantry": {
+      "unopened": "18 months",
+      "tip": "Store in cool, dry place; keep sealed to prevent moisture absorption"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping or moisture in package",
+      "Off smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Gelatin, Unflavored",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍮",
+    "pantry": {
+      "unopened": "3 years",
+      "tip": "Store in cool, dry place; keep tightly sealed"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Clumping or moisture", "Off smell", "Discoloration"]
+  },
+  {
+    "id": 215,
+    "name": "Gravy, Jars and Cans",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "2-5 years",
+      "opened": "Use entire can",
+      "tip": "Store in cool, dry place; use entire contents after opening"
+    },
+    "refrigerated": {
+      "opened": "1-2 days",
+      "tip": "Transfer to airtight container; reheat thoroughly before using"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Bulging or damaged can",
+      "Off smell when opened",
+      "Mold or unusual discoloration"
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Gravy, Dry Mixes",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "Mix entire packet; cool dark place 1 year",
+      "tip": "Mix entire packet at once; store unused mix in airtight container in cool dark place"
+    },
+    "refrigerated": {
+      "opened": "1-2 days",
+      "tip": "Store prepared gravy in airtight container; reheat thoroughly"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping or moisture in packet",
+      "Off smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Herbs, Dried",
+    "category": "Shelf-Stable Foods",
+    "icon": "🌿",
+    "pantry": {
+      "unopened": "1-2 years",
+      "opened": "12 months",
+      "tip": "Store in airtight container away from heat, light, and moisture; keep away from stove"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Loss of aroma or color",
+      "Off smell",
+      "Clumping due to moisture"
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Honey",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍯",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "12 months",
+      "tip": "Store in tightly sealed container at room temperature; crystallization is normal—warm gently to re-liquefy"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth (rare but possible if water introduced)",
+      "Off or fermented smell",
+      "Unusual dark discoloration"
+    ]
+  },
+  {
+    "id": 219,
+    "name": "Jams, Jellies, Preserves",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍓",
+    "pantry": {
+      "unopened": "12 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "6 months",
+      "tip": "Keep tightly sealed; always use clean utensils to avoid contamination"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth on surface",
+      "Off or fermented smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Jerky, Commercially Dried",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥩",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1-2 months",
+      "tip": "Keep in airtight container; store in cool, dry place"
+    },
+    "refrigerated": {
+      "opened": "2-3 months",
+      "tip": "Refrigerate after opening for extended shelf life"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or rancid smell",
+      "Slimy or unusually soft texture"
+    ]
+  },
+  {
+    "id": 221,
+    "name": "Jerky, Homemade",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥩",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 months",
+      "tip": "Store in airtight container; homemade jerky has shorter shelf life than commercial"
+    },
+    "frozen": {
+      "unopened": "8-12 days",
+      "tip": "Freeze in airtight bag for longer storage"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off or rancid smell",
+      "Slimy or soft texture"
+    ]
+  },
+  {
+    "id": 222,
+    "name": "Juice, Boxes",
+    "category": "Shelf-Stable Foods",
+    "icon": "🧃",
+    "pantry": {
+      "unopened": "4-6 months",
+      "opened": "12 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Swollen or damaged box",
+      "Off or fermented smell when opened",
+      "Unusual taste"
+    ]
+  },
+  {
+    "id": 223,
+    "name": "Lentils, Dried",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫘",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1 month",
+      "tip": "Store in airtight container in cool, dry place; older lentils take longer to cook"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Mold or moisture in container",
+      "Off smell",
+      "Visible insects or debris"
+    ]
+  },
+  {
+    "id": 224,
+    "name": "Marshmallows, Marshmallow Creme",
+    "category": "Shelf-Stable Foods",
+    "icon": "☁️",
+    "pantry": {
+      "unopened": "2-4 months",
+      "opened": "4-5 days",
+      "tip": "Keep sealed tightly; store in cool, dry place"
+    },
+    "refrigerated": {
+      "opened": "4-5 days",
+      "tip": "Refrigerate creme after opening in airtight container"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Hard or extremely sticky texture",
+      "Off smell",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 225,
+    "name": "Milk, Canned Evaporated",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥛",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "6 months",
+      "tip": "Store in cool, dry place; transfer to airtight container after opening"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Bulging or damaged can",
+      "Off or sour smell when opened",
+      "Curdled texture"
+    ]
+  },
+  {
+    "id": 226,
+    "name": "Molasses",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "3 months",
+      "tip": "Keep tightly sealed; store in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or fermented smell",
+      "Unusual crystallization"
+    ]
+  },
+  {
+    "id": 227,
+    "name": "Mushrooms, Dried",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍄",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "1-3 months",
+      "tip": "Store in airtight container in cool, dry place away from light"
+    },
+    "refrigerated": {
+      "opened": "4 months",
+      "tip": "Refrigerate in airtight container after opening for longer shelf life"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or musty smell",
+      "Unusual discoloration or moisture"
+    ]
+  },
+  {
+    "id": 228,
+    "name": "Oils, Olive or Vegetable",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫒",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "1 year",
+      "tip": "Store in cool, dark place; keep tightly sealed to prevent oxidation"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or off smell",
+      "Cloudy appearance (olive oil may cloud when cold — normal)",
+      "Unusual bitter or sour taste"
+    ]
+  },
+  {
+    "id": 229,
+    "name": "Nut Oils",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "1 month",
+      "tip": "Refrigerate after opening; nut oils go rancid faster than other oils"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or off smell",
+      "Off or bitter taste",
+      "Unusual cloudiness"
+    ]
+  },
+  {
+    "id": 230,
+    "name": "Vegetable Oil Sprays",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "1 month",
+      "tip": "Store at room temperature; keep away from heat sources"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or off smell",
+      "Fails to spray properly",
+      "Off taste when used"
+    ]
+  },
+  {
+    "id": 231,
+    "name": "Nuts, Jars or Cans",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥜",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1 year",
+      "tip": "Keep sealed in airtight container in cool, dry place"
+    },
+    "refrigerated": {
+      "opened": "Refrigerate 4-6 months",
+      "tip": "Refrigerate or freeze after opening to prevent rancidity"
+    },
+    "frozen": {
+      "unopened": "9-12 months",
+      "tip": "Freeze in airtight container for longest shelf life"
+    },
+    "spoilSigns": [
+      "Rancid or bitter smell",
+      "Off or stale taste",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 232,
+    "name": "Pasta, Dry, Without Eggs",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍝",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "1-2 months",
+      "tip": "Store in airtight container in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or musty smell",
+      "Visible mold or insects",
+      "Discoloration"
+    ]
+  },
+  {
+    "id": 233,
+    "name": "Dry Egg Noodles",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍜",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "2-3 months",
+      "tip": "Store in airtight container in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Visible mold or insects",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 234,
+    "name": "Peanut Butter, Commercial",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥜",
+    "pantry": {
+      "unopened": "6-9 months",
+      "opened": "12 months",
+      "tip": "Store in cool, dry place; natural peanut butter should be refrigerated after opening"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Rancid or off smell", "Off or bitter taste", "Mold growth"]
+  },
+  {
+    "id": 235,
+    "name": "Peas, Dried Split",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫛",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1 month",
+      "tip": "Store in airtight container in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off smell",
+      "Visible mold or insects",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 236,
+    "name": "Pectin",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "Use by pkg. date",
+      "opened": "1 year",
+      "tip": "Keep tightly sealed in cool, dry place; do not use past package date"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Clumping or moisture", "Off smell", "Past package date"]
+  },
+  {
+    "id": 237,
+    "name": "Popcorn, Dry Kernels in Jar",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍿",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "1-2 weeks",
+      "tip": "Keep sealed tightly; store in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Kernels don't pop well (too dry)",
+      "Off smell",
+      "Visible mold or moisture"
+    ]
+  },
+  {
+    "id": 238,
+    "name": "Popcorn, Commercially Popped in Bags",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍿",
+    "pantry": {
+      "unopened": "2-3 months",
+      "opened": "1-2 days popped",
+      "tip": "Keep sealed; once opened store in airtight bag to maintain crunch"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Stale or rancid smell",
+      "Soft or chewy texture",
+      "Off taste"
+    ]
+  },
+  {
+    "id": 239,
+    "name": "Popcorn, Microwave Packets",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍿",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1-2 weeks",
+      "tip": "Store in cool, dry place; use by date on package"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or off smell from bag",
+      "Damaged or torn packaging",
+      "Off taste when popped"
+    ]
+  },
+  {
+    "id": 240,
+    "name": "Potato Chips",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥔",
+    "pantry": {
+      "unopened": "2 months",
+      "opened": "6-12 months",
+      "tip": "Keep sealed tightly after opening; store in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Stale or rancid smell",
+      "Soft or soggy texture",
+      "Off taste"
+    ]
+  },
+  {
+    "id": 241,
+    "name": "Potatoes, Instant",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥔",
+    "pantry": {
+      "unopened": "6-12 months",
+      "opened": "3-4 months",
+      "tip": "Keep sealed in cool, dry place; avoid moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping or moisture",
+      "Off or rancid smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Pudding Mixes",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍮",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "1 year",
+      "tip": "Keep sealed in cool, dry place; avoid moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping or moisture in package",
+      "Off smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 243,
+    "name": "Rice, White or Wild",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍚",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "1 year",
+      "tip": "Store in airtight container in cool, dry place"
+    },
+    "refrigerated": {
+      "opened": "6 months",
+      "tip": "Cooked rice should be refrigerated promptly and used within a few days"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or musty smell",
+      "Visible insects or mold",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Rice, Brown",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍚",
+    "pantry": {
+      "unopened": "1 year",
+      "opened": "Use all",
+      "tip": "Higher oil content; store in airtight container; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "6 months",
+      "tip": "Refrigerate brown rice after opening due to higher oil content"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or off smell",
+      "Visible insects or mold",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Rice, Flavored or Herb Mixes",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍚",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "Use entire amount",
+      "tip": "Use entire packet at once; store unused portions in airtight container"
+    },
+    "refrigerated": {
+      "opened": "6 months",
+      "tip": "Refrigerate any prepared leftovers promptly"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Clumping or moisture",
+      "Visible mold or insects"
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Sauce Mixes, Nondairy (Spaghetti, Taco, etc.)",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "3 months",
+      "tip": "Keep sealed in cool, dry place; use entire packet at once if possible"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Clumping or moisture", "Off smell", "Unusual discoloration"]
+  },
+  {
+    "id": 247,
+    "name": "Cream Sauces, Milk Solids",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "1 year",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Clumping or moisture",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 248,
+    "name": "Shortening, Solid",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "8 months",
+      "tip": "Store in cool, dry place; keep tightly sealed to prevent oxidation"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Rancid or off smell", "Off taste", "Unusual discoloration"]
+  },
+  {
+    "id": 249,
+    "name": "Soda, Diet - Bottles or Cans",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥤",
+    "pantry": {
+      "unopened": "3 months after date",
+      "opened": "1 week",
+      "tip": "Store in cool, dry place; keep away from heat and light"
+    },
+    "refrigerated": {
+      "opened": "2-3 days",
+      "tip": "Refrigerate after opening to maintain carbonation longer"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Loss of carbonation",
+      "Off or flat taste",
+      "Unusual color change"
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Soda, Regular - Bottles",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥤",
+    "pantry": {
+      "unopened": "3 months after date",
+      "opened": "2 weeks",
+      "tip": "Store upright in cool, dry place; keep cap tight after opening"
+    },
+    "refrigerated": {
+      "opened": "2-3 days",
+      "tip": "Refrigerate after opening to maintain carbonation"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Loss of carbonation",
+      "Off or flat taste",
+      "Unusual color or smell"
+    ]
+  },
+  {
+    "id": 251,
+    "name": "Soda, Regular - Cans",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥤",
+    "pantry": {
+      "unopened": "9 months after date",
+      "opened": "12 months",
+      "tip": "Store in cool, dry place; avoid storing in extreme heat"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Bulging or damaged can",
+      "Loss of carbonation when opened",
+      "Off taste"
+    ]
+  },
+  {
+    "id": 252,
+    "name": "Soup Mixes, Dry Bouillon",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍜",
+    "pantry": {
+      "unopened": "12 months",
+      "tip": "Store in cool, dry place; keep tightly sealed to prevent moisture absorption"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Clumping or moisture", "Off smell", "Unusual discoloration"]
+  },
+  {
+    "id": 253,
+    "name": "Soy or Rice Beverage, Shelf Stable",
+    "category": "Soy Products",
+    "icon": "🥛",
+    "pantry": {
+      "unopened": "3 months or use-by date",
+      "opened": "3-4 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "7-10 days",
+      "tip": "Shake well before use; keep tightly sealed after opening"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or sour smell",
+      "Curdled or chunky texture",
+      "Unusual taste"
+    ]
+  },
+  {
+    "id": 254,
+    "name": "Soy Beverage Powders",
+    "category": "Soy Products",
+    "icon": "🥛",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "1 year",
+      "tip": "Keep sealed in cool, dry place; avoid moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping or moisture in powder",
+      "Off smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 255,
+    "name": "Soy Flour, De-Fatted / Low-Fat",
+    "category": "Soy Products",
+    "icon": "🌾",
+    "pantry": {
+      "unopened": "1 year",
+      "tip": "Store in airtight container in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Clumping or moisture",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 256,
+    "name": "Soy Flour, Full-Fat",
+    "category": "Soy Products",
+    "icon": "🌾",
+    "pantry": {
+      "unopened": "2 months",
+      "opened": "3-4 months",
+      "tip": "Refrigerate after opening due to higher fat content"
+    },
+    "refrigerated": {
+      "opened": "6 months",
+      "tip": "Store in airtight container; higher fat content means faster spoilage at room temperature"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Rancid or off smell",
+      "Clumping or moisture",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 257,
+    "name": "Textured Soy Protein (TSP)",
+    "category": "Soy Products",
+    "icon": "🫘",
+    "pantry": {
+      "unopened": "2 years",
+      "tip": "Store in cool, dry place; keep sealed to prevent moisture absorption"
+    },
+    "refrigerated": {
+      "opened": "3-4 days",
+      "tip": "Refrigerate rehydrated TSP promptly; use within a few days"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off smell after rehydrating",
+      "Slimy texture",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 258,
+    "name": "Re-Hydrated TSP",
+    "category": "Soy Products",
+    "icon": "🫘",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 months",
+      "opened": "4 days",
+      "tip": "Refrigerate immediately after rehydrating; use promptly"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or sour smell",
+      "Slimy texture",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 259,
+    "name": "Spaghetti Sauce in Jars",
+    "category": "Soy Products",
+    "icon": "🍝",
+    "pantry": {
+      "unopened": "18 months",
+      "tip": "Store in cool, dry place; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "4 days",
+      "tip": "Transfer to airtight container after opening; use within 4 days"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or fermented smell",
+      "Unusual discoloration or separation"
+    ]
+  },
+  {
+    "id": 260,
+    "name": "Spices, Whole",
+    "category": "Shelf-Stable Foods",
+    "icon": "🌶️",
+    "pantry": {
+      "unopened": "2-4 years total",
+      "opened": "Included in total",
+      "tip": "Store in airtight container away from heat, light, and moisture; keep away from stove"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Loss of aroma or potency", "Off smell", "Faded color"]
+  },
+  {
+    "id": 261,
+    "name": "Spices, Ground",
+    "category": "Shelf-Stable Foods",
+    "icon": "🌶️",
+    "pantry": {
+      "unopened": "2-3 years total",
+      "opened": "Included in total",
+      "tip": "Store in airtight container away from heat, light, and moisture; grind whole spices fresh for best flavor"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Loss of aroma or potency",
+      "Off smell",
+      "Faded or dull color"
+    ]
+  },
+  {
+    "id": 262,
+    "name": "Spices, Paprika, Red Pepper & Chili Powder",
+    "category": "Shelf-Stable Foods",
+    "icon": "🌶️",
+    "pantry": {
+      "unopened": "2 years total",
+      "opened": "Included in total",
+      "tip": "Store in refrigerator after opening to preserve color and prevent insect infestation"
+    },
+    "refrigerated": {
+      "opened": "Store in refrigerator",
+      "tip": "Refrigerating these spices helps maintain color and potency longer"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Faded color",
+      "Loss of aroma or heat",
+      "Off smell or visible insects"
+    ]
+  },
+  {
+    "id": 263,
+    "name": "Sugar, Brown",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍬",
+    "pantry": {
+      "unopened": "4 months",
+      "opened": "Sugar never spoils",
+      "tip": "Store in airtight container to prevent hardening; add a slice of bread or marshmallow to keep soft"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Extreme hardening (still safe, break apart or microwave)",
+      "Off smell",
+      "Mold if moisture entered"
+    ]
+  },
+  {
+    "id": 264,
+    "name": "Sugar, Granulated",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍬",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "Sugar never spoils",
+      "tip": "Store in airtight container in cool, dry place; keep away from moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping due to moisture (still safe, break apart)",
+      "Off smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 265,
+    "name": "Sugar, Confectioners",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍬",
+    "pantry": {
+      "unopened": "18 months",
+      "opened": "Sugar never spoils",
+      "tip": "Store in airtight container; sift before use if clumped"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping due to moisture",
+      "Off smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 266,
+    "name": "Sugar Substitutes",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍬",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "Sugar never spoils",
+      "tip": "Keep sealed tightly in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Clumping or moisture", "Off smell", "Unusual discoloration"]
+  },
+  {
+    "id": 267,
+    "name": "Syrup, Pancake",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍯",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "12 months",
+      "tip": "Store in cool, dry place; refrigeration is optional but extends quality"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or fermented smell",
+      "Unusual crystallization"
+    ]
+  },
+  {
+    "id": 268,
+    "name": "Syrup, Genuine or Real Maple",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍁",
+    "pantry": {
+      "unopened": "12 months",
+      "tip": "Refrigerate after opening; real maple syrup can mold at room temperature"
+    },
+    "refrigerated": {
+      "opened": "12 months",
+      "tip": "Keep tightly sealed in refrigerator after opening to prevent mold"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth on surface",
+      "Off or fermented smell",
+      "Unusual cloudiness"
+    ]
+  },
+  {
+    "id": 269,
+    "name": "Tapioca",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "12 months",
+      "tip": "Store in airtight container in cool, dry place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Clumping or moisture", "Off smell", "Unusual discoloration"]
+  },
+  {
+    "id": 270,
+    "name": "Tea, Bags",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍵",
+    "pantry": {
+      "unopened": "18 months",
+      "opened": "12 months",
+      "tip": "Store in airtight container away from light, heat, and strong odors"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Loss of aroma or flavor", "Off smell", "Mold on bags"]
+  },
+  {
+    "id": 271,
+    "name": "Tea, Loose",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍵",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "6-12 months",
+      "tip": "Store in airtight tin or container away from light and moisture"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Loss of aroma or flavor",
+      "Off or musty smell",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 272,
+    "name": "Tea, Instant",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍵",
+    "pantry": {
+      "unopened": "3 years",
+      "opened": "6-12 months",
+      "tip": "Keep sealed tightly; avoid moisture which causes clumping"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Clumping due to moisture",
+      "Off or stale smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 273,
+    "name": "Toaster Pastries, Fruit Filled",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥧",
+    "pantry": {
+      "unopened": "6 months",
+      "opened": "Keep foil packets sealed",
+      "tip": "Keep individual foil packets sealed until ready to eat"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Stale or off smell", "Mold growth", "Soggy texture"]
+  },
+  {
+    "id": 274,
+    "name": "Toaster Pastries, Non-Fruit Fillings",
+    "category": "Shelf-Stable Foods",
+    "icon": "🥧",
+    "pantry": {
+      "unopened": "9 months",
+      "opened": "Keep foil packets sealed",
+      "tip": "Keep individual foil packets sealed until ready to eat"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": ["Stale or off smell", "Mold growth", "Soggy texture"]
+  },
+  {
+    "id": 275,
+    "name": "Tomatoes, Sun Dried, Packed in Oil",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍅",
+    "pantry": {
+      "unopened": "12 months",
+      "opened": "3-6 months",
+      "tip": "Keep submerged in oil after opening; refrigerate after opening"
+    },
+    "refrigerated": {
+      "opened": "6-12 months",
+      "tip": "Keep submerged in oil in airtight container"
+    },
+    "frozen": null,
+    "spoilSigns": ["Mold growth in oil", "Off or rancid smell", "Slimy texture"]
+  },
+  {
+    "id": 276,
+    "name": "Tomatoes, Sun Dried, Packed in Cellophane",
+    "category": "Shelf-Stable Foods",
+    "icon": "🍅",
+    "pantry": {
+      "unopened": "9 months",
+      "opened": "3-6 months",
+      "tip": "Store in airtight container in cool, dry place after opening"
+    },
+    "refrigerated": {
+      "opened": "6-12 months",
+      "tip": "Refrigerate in airtight container after opening"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or rancid smell",
+      "Unusual discoloration"
+    ]
+  },
+  {
+    "id": 277,
+    "name": "Vinegar",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "2 years",
+      "opened": "12 months",
+      "tip": "Store in cool, dark place; keep tightly sealed to prevent evaporation"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Unusual cloudiness or sediment (often harmless mother of vinegar)",
+      "Off smell",
+      "Significant color change"
+    ]
+  },
+  {
+    "id": 278,
+    "name": "Yeast, Dry, Packets and Jars",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "Use by date",
+      "tip": "Store in cool, dry place; refrigerate open jars"
+    },
+    "refrigerated": {
+      "opened": "Refrigerate open jars",
+      "tip": "Keep open jars sealed tightly in refrigerator; use by date on package"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "No bubbling when proofed in warm water (dead yeast)",
+      "Off smell",
+      "Past use-by date"
+    ]
+  },
+  {
+    "id": 279,
+    "name": "Water, Bottled",
+    "category": "Shelf-Stable Foods",
+    "icon": "💧",
+    "pantry": {
+      "unopened": "1-2 years",
+      "opened": "3 months",
+      "tip": "Store away from direct sunlight and chemicals; keep in cool, dark place"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Unusual taste or odor",
+      "Algae or particles visible",
+      "Damaged or compromised seal"
+    ]
+  },
+  {
+    "id": 280,
+    "name": "Worcestershire Sauce",
+    "category": "Shelf-Stable Foods",
+    "icon": "🫙",
+    "pantry": {
+      "unopened": "1 year",
+      "opened": "1 year",
+      "tip": "Store in cool, dark place; refrigerate after opening for best quality"
+    },
+    "refrigerated": null,
+    "frozen": null,
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Mold growth",
+      "Unusual separation or discoloration"
+    ]
+  },
+  {
+    "id": 281,
+    "name": "Bread, Commercial",
+    "category": "Bakery Items",
+    "icon": "🍞",
+    "pantry": {
+      "unopened": "2-4 days",
+      "tip": "Keep in original packaging; store in cool, dry place or bread box"
+    },
+    "refrigerated": {
+      "unopened": "7-14 days",
+      "tip": "Refrigeration extends life but can dry out bread; keep sealed"
+    },
+    "frozen": {
+      "unopened": "3 months",
+      "tip": "Slice before freezing for easy use; toast directly from frozen"
+    },
+    "spoilSigns": ["Mold growth", "Off or sour smell", "Stale or hard texture"]
+  },
+  {
+    "id": 282,
+    "name": "Bread, Flat (Tortillas, Pita)",
+    "category": "Bakery Items",
+    "icon": "🫓",
+    "pantry": {
+      "unopened": "2-4 days",
+      "tip": "Keep in original packaging; store in cool, dry place"
+    },
+    "refrigerated": {
+      "unopened": "4-7 days",
+      "tip": "Keep in airtight bag; bring to room temperature or warm before serving"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Separate with parchment paper before freezing; thaw at room temperature"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off smell",
+      "Slimy or unusually hard texture"
+    ]
+  },
+  {
+    "id": 283,
+    "name": "Cake, Angel Food",
+    "category": "Bakery Items",
+    "icon": "🎂",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store loosely covered at room temperature; refrigerate if frosted with dairy"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep loosely covered to prevent drying out"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Wrap tightly in plastic wrap and foil; thaw at room temperature"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off smell",
+      "Slimy or dry and crumbly texture"
+    ]
+  },
+  {
+    "id": 284,
+    "name": "Cake, Chiffon or Sponge",
+    "category": "Bakery Items",
+    "icon": "🎂",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store loosely covered; refrigerate if contains dairy frosting or filling"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep loosely covered to prevent drying out"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Wrap tightly before freezing; thaw in refrigerator"
+    },
+    "spoilSigns": ["Mold growth", "Off smell", "Slimy or overly dry texture"]
+  },
+  {
+    "id": 285,
+    "name": "Cake, Chocolate",
+    "category": "Bakery Items",
+    "icon": "🍫",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store loosely covered; refrigerate if frosted with dairy or egg-based frosting"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep loosely covered to prevent drying out"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Wrap tightly in plastic wrap and foil; thaw in refrigerator"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off smell",
+      "Slimy or excessively dry texture"
+    ]
+  },
+  {
+    "id": 286,
+    "name": "Cake, Fruit Cake",
+    "category": "Bakery Items",
+    "icon": "🎂",
+    "pantry": {
+      "unopened": "1 month",
+      "tip": "Wrap tightly in alcohol-soaked cheesecloth then foil for longer pantry storage"
+    },
+    "refrigerated": {
+      "unopened": "6 months",
+      "tip": "Wrap tightly; can be periodically brushed with brandy or rum to extend life"
+    },
+    "frozen": {
+      "unopened": "12 months",
+      "tip": "Wrap tightly in plastic wrap and foil; thaw in refrigerator"
+    },
+    "spoilSigns": ["Mold growth", "Off or rancid smell", "Unusual sliminess"]
+  },
+  {
+    "id": 287,
+    "name": "Cake, Made from Mix",
+    "category": "Bakery Items",
+    "icon": "🎂",
+    "pantry": {
+      "unopened": "3-4 days",
+      "tip": "Store loosely covered; refrigerate if frosted with dairy or egg-based frosting"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep loosely covered to prevent drying out"
+    },
+    "frozen": {
+      "unopened": "4 months",
+      "tip": "Wrap tightly before freezing; thaw at room temperature or in refrigerator"
+    },
+    "spoilSigns": ["Mold growth", "Off smell", "Slimy texture"]
+  },
+  {
+    "id": 288,
+    "name": "Cake, Pound Cake",
+    "category": "Bakery Items",
+    "icon": "🎂",
+    "pantry": {
+      "unopened": "3-4 days",
+      "tip": "Store wrapped tightly at room temperature"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep tightly wrapped to prevent drying out"
+    },
+    "frozen": {
+      "unopened": "6 months",
+      "tip": "Slice before freezing for easier use; wrap tightly in plastic and foil"
+    },
+    "spoilSigns": ["Mold growth", "Off or rancid smell", "Slimy texture"]
+  },
+  {
+    "id": 289,
+    "name": "Cheesecake",
+    "category": "Bakery Items",
+    "icon": "🍰",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Cover tightly; keep in coldest part of fridge away from strong odors"
+    },
+    "frozen": {
+      "unopened": "2-3 months",
+      "tip": "Freeze uncovered until solid, then wrap tightly in plastic and foil"
+    },
+    "spoilSigns": [
+      "Mold growth on surface",
+      "Off or sour smell",
+      "Watery or cracked surface with discoloration"
+    ]
+  },
+  {
+    "id": 290,
+    "name": "Cookies, Bakery or Homemade",
+    "category": "Bakery Items",
+    "icon": "🍪",
+    "pantry": {
+      "unopened": "2-3 weeks",
+      "tip": "Store in airtight container; keep crispy and soft cookies in separate containers"
+    },
+    "refrigerated": {
+      "unopened": "2 months",
+      "tip": "Keep in airtight container; bring to room temperature before serving"
+    },
+    "frozen": {
+      "unopened": "8-12 months",
+      "tip": "Freeze in airtight container; thaw at room temperature"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off or rancid smell",
+      "Stale or soggy texture"
+    ]
+  },
+  {
+    "id": 291,
+    "name": "Croissants, Butter",
+    "category": "Bakery Items",
+    "icon": "🥐",
+    "pantry": {
+      "unopened": "1 day",
+      "tip": "Best eaten day of purchase; store in paper bag to maintain crispness"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Warm in oven before serving to restore flakiness"
+    },
+    "frozen": {
+      "unopened": "1 month",
+      "tip": "Freeze in airtight bag; warm in oven directly from frozen"
+    },
+    "spoilSigns": ["Mold growth", "Off or rancid smell", "Slimy texture"]
+  },
+  {
+    "id": 292,
+    "name": "Doughnuts, Glazed or Cake",
+    "category": "Bakery Items",
+    "icon": "🍩",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store loosely covered at room temperature; avoid airtight container which makes glaze sticky"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep loosely covered; bring to room temperature or warm briefly before eating"
+    },
+    "frozen": null,
+    "spoilSigns": ["Mold growth", "Off smell", "Slimy texture"]
+  },
+  {
+    "id": 293,
+    "name": "Doughnuts, Dairy Cream Filled",
+    "category": "Bakery Items",
+    "icon": "🍩",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Must be refrigerated due to dairy cream filling; keep loosely covered"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Mold growth",
+      "Off or sour smell from filling",
+      "Slimy texture"
+    ]
+  },
+  {
+    "id": 294,
+    "name": "Eclairs, Dairy Cream Filled",
+    "category": "Bakery Items",
+    "icon": "🍫",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Must be refrigerated due to dairy cream filling; cover loosely"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Freeze without glaze if possible; thaw in refrigerator"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off or sour smell from filling",
+      "Slimy texture"
+    ]
+  },
+  {
+    "id": 295,
+    "name": "Muffins",
+    "category": "Bakery Items",
+    "icon": "🧁",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store in airtight container at room temperature; line container with paper towel to absorb moisture"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep in airtight container; warm briefly before eating"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Wrap individually before freezing; microwave or oven-warm from frozen"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off smell",
+      "Slimy or excessively dry texture"
+    ]
+  },
+  {
+    "id": 296,
+    "name": "Pastries, Danish",
+    "category": "Bakery Items",
+    "icon": "🥐",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store loosely covered at room temperature; best eaten fresh"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep loosely covered; warm in oven before serving"
+    },
+    "frozen": null,
+    "spoilSigns": ["Mold growth", "Off smell", "Slimy texture"]
+  },
+  {
+    "id": 297,
+    "name": "Pie, Cream",
+    "category": "Bakery Items",
+    "icon": "🥧",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep loosely covered in refrigerator; must be kept cold due to dairy filling"
+    },
+    "frozen": null,
+    "spoilSigns": [
+      "Off or sour smell",
+      "Watery or separated filling",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 298,
+    "name": "Pie, Chiffon",
+    "category": "Bakery Items",
+    "icon": "🥧",
+    "pantry": null,
+    "refrigerated": {
+      "unopened": "1-2 days",
+      "tip": "Keep loosely covered; very delicate and best eaten quickly"
+    },
+    "frozen": {
+      "unopened": "8 months",
+      "tip": "Freeze without topping; add whipped cream after thawing"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Watery or collapsed texture",
+      "Mold growth"
+    ]
+  },
+  {
+    "id": 299,
+    "name": "Pie, Fruit",
+    "category": "Bakery Items",
+    "icon": "🥧",
+    "pantry": {
+      "unopened": "1-2 days",
+      "tip": "Store loosely covered at room temperature; refrigerate after 2 days"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep loosely covered to prevent crust from getting soggy"
+    },
+    "frozen": {
+      "unopened": "8 months",
+      "tip": "Freeze unbaked or baked; wrap tightly in plastic wrap and foil"
+    },
+    "spoilSigns": [
+      "Mold growth",
+      "Off or fermented smell",
+      "Slimy filling texture"
+    ]
+  },
+  {
+    "id": 300,
+    "name": "Pie, Mincemeat",
+    "category": "Bakery Items",
+    "icon": "🥧",
+    "pantry": {
+      "unopened": "2 hours",
+      "tip": "Refrigerate promptly; do not leave at room temperature for more than 2 hours"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep loosely covered in refrigerator"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Wrap tightly before freezing; thaw in refrigerator"
+    },
+    "spoilSigns": ["Off or fermented smell", "Mold growth", "Slimy texture"]
+  },
+  {
+    "id": 301,
+    "name": "Pie, Pecan",
+    "category": "Bakery Items",
+    "icon": "🥧",
+    "pantry": {
+      "unopened": "2 hours",
+      "tip": "Refrigerate promptly; do not leave at room temperature for more than 2 hours"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep loosely covered in refrigerator"
+    },
+    "frozen": {
+      "unopened": "1-2 months",
+      "tip": "Wrap tightly before freezing; thaw in refrigerator"
+    },
+    "spoilSigns": [
+      "Off or rancid smell",
+      "Mold growth",
+      "Unusual slimy or fermented texture"
+    ]
+  },
+  {
+    "id": 302,
+    "name": "Pie, Pumpkin",
+    "category": "Bakery Items",
+    "icon": "🎃",
+    "pantry": {
+      "unopened": "2 hours",
+      "tip": "Refrigerate promptly; do not leave at room temperature for more than 2 hours"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep loosely covered in refrigerator"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Wrap tightly before freezing; thaw in refrigerator"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Mold growth",
+      "Watery or separated filling"
+    ]
+  },
+  {
+    "id": 303,
+    "name": "Quiche",
+    "category": "Bakery Items",
+    "icon": "🥧",
+    "pantry": {
+      "unopened": "2 hours",
+      "tip": "Refrigerate promptly; do not leave at room temperature for more than 2 hours"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep tightly covered; reheat thoroughly before eating"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Cool completely before freezing; wrap tightly and reheat in oven"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Mold growth",
+      "Slimy or watery texture"
+    ]
+  },
+  {
+    "id": 304,
+    "name": "Rolls, Yeast, Baked",
+    "category": "Bakery Items",
+    "icon": "🍞",
+    "pantry": {
+      "unopened": "3-4 days",
+      "tip": "Store in airtight bag; best eaten within a few days of baking"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep in airtight bag; warm in oven before serving"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Freeze in airtight bag; warm in oven directly from frozen"
+    },
+    "spoilSigns": ["Mold growth", "Off smell", "Stale or hard texture"]
+  },
+  {
+    "id": 305,
+    "name": "Rolls, Yeast, Partially Baked",
+    "category": "Bakery Items",
+    "icon": "🍞",
+    "pantry": {
+      "unopened": "Package date",
+      "tip": "Follow package instructions; refrigerate or freeze for longer storage"
+    },
+    "refrigerated": {
+      "unopened": "1 week",
+      "tip": "Keep in original packaging; bake per package instructions"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Freeze in original packaging; bake directly from frozen"
+    },
+    "spoilSigns": ["Mold growth", "Off smell", "Unusual discoloration of dough"]
+  },
+  {
+    "id": 306,
+    "name": "Rolls, Filled with Meat or Vegetables",
+    "category": "Bakery Items",
+    "icon": "🫔",
+    "pantry": {
+      "unopened": "2 hours",
+      "tip": "Refrigerate promptly; do not leave at room temperature for more than 2 hours"
+    },
+    "refrigerated": {
+      "unopened": "3-4 days",
+      "tip": "Keep in airtight container; reheat thoroughly before eating"
+    },
+    "frozen": {
+      "unopened": "2 months",
+      "tip": "Cool completely before freezing; reheat in oven from frozen"
+    },
+    "spoilSigns": [
+      "Off or sour smell",
+      "Mold growth",
+      "Slimy texture of filling"
     ]
   }
 ]
