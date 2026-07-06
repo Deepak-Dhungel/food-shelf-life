@@ -5,6 +5,7 @@ import DataSourceBanner from "./components/DataSourceBanner";
 import Header from "./components/Header";
 import FoodList from "./components/FoodList";
 import SearchBar from "./components/SearchBar";
+import BottomSheet from "./components/BottomSheet";
 import MobileSearchOverlay, {
   type MobileSearchOverlayHandle,
 } from "./components/MobileSearchOverlay";
@@ -83,44 +84,33 @@ function App() {
         </div>
       </div>
 
-      {/* Backdrop — closes panel when tapping outside */}
-      {searchPanelOpen && (
-        <div
-          className="hidden max-sm:block fixed inset-0 z-20"
-          onClick={() => setSearchPanelOpen(false)}
-        />
-      )}
-
       {/* Mobile Search Panel */}
-      <div
-        className={`hidden max-sm:block absolute bottom-0 left-0 right-0 z-30 bg-white rounded-t-3xl px-6 pt-3 pb-[calc(1.5rem+env(safe-area-inset-bottom))] shadow-[0_-8px_32px_rgba(0,0,0,0.18)] transition-transform duration-300 ease-in-out ${
-          searchPanelOpen ? "translate-y-0" : "translate-y-[calc(100%+4rem)]"
-        }`}
+      <BottomSheet
+        isOpen={searchPanelOpen}
+        onClose={() => setSearchPanelOpen(false)}
+        className="hidden max-sm:block"
       >
-        {/* Drag handle */}
-        <div className="flex justify-center mb-3">
-          <div className="w-10 h-1 rounded-full bg-gray-200" />
-        </div>
-
-        <p className="text-xl font-bold text-gray-900 text-center mt-6 mb-4 leading-snug">
-          Find food safety info
-          <span className="block text-sm font-normal text-gray-400 mt-1">
-            Search a food or browse by category
-          </span>
-        </p>
-        <div className="cursor-pointer" onClick={openOverlay}>
-          <div className="pointer-events-none">
-            <SearchBar query={query} onSearch={setQuery} />
+        <div className="px-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))]">
+          <p className="text-xl font-bold text-gray-900 text-center mt-2 mb-4 leading-snug">
+            Find food safety info
+            <span className="block text-sm font-normal text-gray-400 mt-1">
+              Search a food or browse by category
+            </span>
+          </p>
+          <div className="cursor-pointer" onClick={openOverlay}>
+            <div className="pointer-events-none">
+              <SearchBar query={query} onSearch={setQuery} />
+            </div>
           </div>
+          <button
+            type="button"
+            onClick={() => setSearchPanelOpen(false)}
+            className="block w-full text-sm underline text-gray-600 text-center mt-10"
+          >
+            Browse the list instead
+          </button>
         </div>
-        <button
-          type="button"
-          onClick={() => setSearchPanelOpen(false)}
-          className="block w-full text-sm underline text-gray-600 text-center mt-10"
-        >
-          Browse the list instead
-        </button>
-      </div>
+      </BottomSheet>
 
       {/* Mobile full-screen search overlay */}
       <MobileSearchOverlay

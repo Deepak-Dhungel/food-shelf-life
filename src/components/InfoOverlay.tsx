@@ -8,6 +8,7 @@ import {
   FEEDBACK_EMAIL,
   MADE_BY,
 } from "../constants/constant";
+import BottomSheet from "./BottomSheet";
 
 interface InfoOverlayProps {
   isOpen: boolean;
@@ -49,25 +50,10 @@ function Row({
 
 export default function InfoOverlay({ isOpen, onClose }: InfoOverlayProps) {
   return (
-    <>
-      {/* Backdrop */}
-      {isOpen && (
-        <div className="fixed inset-0 z-40 bg-black/40" onClick={onClose} />
-      )}
-
-      {/* Bottom sheet */}
-      <div
-        className={`fixed bottom-0 left-0 right-0 z-50 bg-white rounded-t-3xl transition-transform duration-300 ease-in-out pb-[env(safe-area-inset-bottom,0px)] ${
-          isOpen ? "translate-y-0" : "translate-y-full"
-        }`}
-      >
-        {/* Drag handle */}
-        <div className="flex justify-center pt-3">
-          <div className="w-10 h-1 rounded-full bg-gray-200" />
-        </div>
-
+    <BottomSheet isOpen={isOpen} onClose={onClose}>
+      <div className="pb-[env(safe-area-inset-bottom,0px)]">
         {/* Title row + close button */}
-        <div className="flex items-center justify-between px-6 pt-4 pb-2">
+        <div className="flex items-center justify-between px-6 pt-2 pb-2">
           <h2 className="text-lg font-bold text-gray-900">About</h2>
           <button
             type="button"
@@ -85,7 +71,7 @@ export default function InfoOverlay({ isOpen, onClose }: InfoOverlayProps) {
         </p>
 
         {/* Info rows */}
-        <div className="px-6 pt-0">
+        <div className="px-6">
           <div className="bg-gray-50 rounded-2xl px-4">
             <Row label="App Name">{APP_NAME}</Row>
             <Row label="Items in database">{foodData.length} food items</Row>
@@ -116,6 +102,6 @@ export default function InfoOverlay({ isOpen, onClose }: InfoOverlayProps) {
           {MADE_BY}
         </p>
       </div>
-    </>
+    </BottomSheet>
   );
 }

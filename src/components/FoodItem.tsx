@@ -1,4 +1,4 @@
-import type { Food } from "../types/food";
+import type { Food, StorageInfo } from "../types/food";
 import {
   SPOIL_SIGNS_LABEL,
   STORAGE_FALLBACK_TIPS,
@@ -89,24 +89,41 @@ function WarnIcon() {
 interface StorageCardProps {
   icon: React.ReactNode;
   label: string;
-  duration: string | null;
-  tip: string;
+  storage: StorageInfo | null;
   fallbackTip: string;
 }
 
-function StorageCard({ icon, label, duration, tip, fallbackTip }: StorageCardProps) {
+function StorageCard({ icon, label, storage, fallbackTip }: StorageCardProps) {
   return (
     <div className="bg-gray-100 rounded-xl p-3.5 flex flex-col">
       <div className="flex items-center gap-1.5 text-gray-400 text-xs mb-2">
         {icon}
         <span>{label}</span>
       </div>
-      {duration ? (
+      {storage ? (
         <>
-          <p className="font-bold text-gray-900 text-base leading-snug">
-            {duration}
-          </p>
-          <p className="text-xs text-gray-400 mt-1">{tip}</p>
+          {storage.unopened && storage.opened ? (
+            <div className="space-y-1">
+              <div>
+                <span className="text-xs text-gray-400">Unopened </span>
+                <span className="font-bold text-gray-900 text-sm">{storage.unopened}</span>
+              </div>
+              <div>
+                <span className="text-xs text-gray-400">Opened </span>
+                <span className="font-bold text-gray-900 text-sm">{storage.opened}</span>
+              </div>
+            </div>
+          ) : storage.opened ? (
+            <div>
+              <span className="text-xs text-gray-400">Opened </span>
+              <span className="font-bold text-gray-900 text-base leading-snug">{storage.opened}</span>
+            </div>
+          ) : (
+            <p className="font-bold text-gray-900 text-base leading-snug">
+              {storage.unopened}
+            </p>
+          )}
+          <p className="text-xs text-gray-400 mt-1">{storage.tip}</p>
         </>
       ) : (
         <p className="text-sm text-gray-500 italic leading-snug">
@@ -160,22 +177,19 @@ export default function FoodItem({
             <StorageCard
               icon={<ShelfIcon />}
               label={STORAGE_LABELS.SHELF}
-              duration={food.pantry}
-              tip={food.pantryTip}
+              storage={food.pantry}
               fallbackTip={STORAGE_FALLBACK_TIPS.SHELF}
             />
             <StorageCard
               icon={<FridgeIcon />}
               label={STORAGE_LABELS.FRIDGE}
-              duration={food.refrigerated}
-              tip={food.fridgeTip}
+              storage={food.refrigerated}
               fallbackTip={STORAGE_FALLBACK_TIPS.FRIDGE}
             />
             <StorageCard
               icon={<FreezerIcon />}
               label={STORAGE_LABELS.FREEZER}
-              duration={food.frozen}
-              tip={food.freezerTip}
+              storage={food.frozen}
               fallbackTip={STORAGE_FALLBACK_TIPS.FREEZER}
             />
           </div>
