@@ -20,6 +20,38 @@
     <title>Still Good</title>
   </head>
   <body>
+    <!-- Splash screen — removed by main.tsx after React mounts -->
+    <div id="splash" style="
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f9fafb;
+      gap: 16px;
+      z-index: 9999;
+      animation: splash-fade-in 0.2s ease-out;
+    ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:72px;height:72px;border-radius:22%;">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#f26640"/>
+            <stop offset="100%" stop-color="#be2700"/>
+          </linearGradient>
+        </defs>
+        <rect width="512" height="512" rx="115" fill="url(#g)"/>
+        <ellipse cx="256" cy="100" rx="220" ry="110" fill="white" fill-opacity="0.08"/>
+        <polyline points="125,262 218,356 387,168" fill="none" stroke="white" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span style="font-family:system-ui,sans-serif;font-size:22px;font-weight:700;color:#111827;letter-spacing:-0.3px;">Still Good</span>
+    </div>
+    <style>
+      @keyframes splash-fade-in { from { opacity: 0; } to { opacity: 1; } }
+      #splash.hiding { animation: splash-fade-out 0.25s ease-in forwards; }
+      @keyframes splash-fade-out { from { opacity: 1; } to { opacity: 0; } }
+    </style>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

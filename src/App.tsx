@@ -24,6 +24,7 @@ function App() {
   const openOverlay = () => {
     overlayRef.current?.focusInput();
     setOverlayOpen(true);
+    setSearchPanelOpen(false);
   };
 
   const filteredFoods = foods.filter((food) => {
