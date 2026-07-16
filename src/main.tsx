@@ -14,6 +14,8 @@ createRoot(rootElement).render(
 
 const splash = document.getElementById('splash')
 if (splash) {
-  splash.classList.add('hiding')
-  splash.addEventListener('animationend', () => splash.remove(), { once: true })
+  setTimeout(() => {
+    splash.classList.add('hiding')
+    setTimeout(() => splash.remove(), 300)
+  }, 1000)
 }
