@@ -110,6 +110,14 @@ export default function FoodList({
         )}
       </div>
 
+      {query.trim().length > 0 && query.trim().length < 3 && (
+        <p className="shrink-0 text-center text-xs text-gray-400 mb-3">
+          {3 - query.trim().length === 1
+            ? "Type 1 more character to filter results"
+            : `Type ${3 - query.trim().length} more characters to filter results`}
+        </p>
+      )}
+
       <div ref={listRef} className="flex-1 overflow-y-auto max-sm:pb-28">
         {foods.length === 0 ? (
           <p className="py-7 text-center text-gray-400 text-sm">

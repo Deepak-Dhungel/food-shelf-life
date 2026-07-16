@@ -45,15 +45,17 @@ const MobileSearchOverlay = forwardRef<
     }
   }, [isOpen]);
 
-  const results = overlayQuery.trim()
-    ? foods.filter(
-        (f) =>
-          f.name.toLowerCase().includes(overlayQuery.toLowerCase()) ||
-          f.category.toLowerCase().includes(overlayQuery.toLowerCase())
-      )
-    : [];
+  const trimmed = overlayQuery.trim();
+  const results =
+    trimmed.length >= 3
+      ? foods.filter(
+          (f) =>
+            f.name.toLowerCase().includes(trimmed.toLowerCase()) ||
+            f.category.toLowerCase().includes(trimmed.toLowerCase())
+        )
+      : [];
 
-  const showResults = overlayQuery.trim().length > 0;
+  const showResults = trimmed.length >= 3;
 
   return (
     <div
@@ -81,7 +83,13 @@ const MobileSearchOverlay = forwardRef<
 
       {/* Results or Popular Categories */}
       <div className="flex-1 overflow-y-auto px-4 pt-5">
-        {showResults ? (
+        {trimmed.length > 0 && trimmed.length < 3 ? (
+          <p className="py-6 text-center text-gray-400 text-sm">
+            {3 - trimmed.length === 1
+              ? "Type 1 more character to search"
+              : `Type ${3 - trimmed.length} more characters to search`}
+          </p>
+        ) : showResults ? (
           <>
             <p className="font-bold text-gray-900 text-base mb-1">
               Results
