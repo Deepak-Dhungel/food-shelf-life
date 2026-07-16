@@ -28,6 +28,7 @@ function App() {
 
   const filteredFoods = foods.filter((food) => {
     const matchesQuery =
+      query.trim().length < 3 ||
       food.name.toLowerCase().includes(query.toLowerCase()) ||
       food.category.toLowerCase().includes(query.toLowerCase());
     const matchesCategory =
@@ -53,7 +54,7 @@ function App() {
         />
       </main>
 
-      {/* Floating search bar — visible only when panel is closed */}
+      {/* Mobile Floating search bar */}
       <div
         className={`hidden max-sm:block absolute bottom-0 left-0 right-0 z-10 px-4 pt-6 pb-[calc(1rem+env(safe-area-inset-bottom))] bg-gray-50/60 transition-opacity duration-200 ${
           searchPanelOpen ? "opacity-0 pointer-events-none" : "opacity-100"
@@ -84,7 +85,7 @@ function App() {
         </div>
       </div>
 
-      {/* Mobile Search Panel */}
+      {/* Mobile Bottom Search Panel */}
       <BottomSheet
         isOpen={searchPanelOpen}
         onClose={() => setSearchPanelOpen(false)}
@@ -122,11 +123,13 @@ function App() {
           setQuery(category);
           setActiveCategory(ALL_CATEGORIES);
           setExpandedFoodId(null);
+          setSearchPanelOpen(false);
         }}
         onSelectFood={(food) => {
           setQuery(food.name);
           setExpandedFoodId(food.id);
           setActiveCategory(ALL_CATEGORIES);
+          setSearchPanelOpen(false);
         }}
       />
     </div>
